@@ -5,7 +5,7 @@ import styles from "./ProdutoDetalhes.module.css";
 import Header from "../Header";
 import { FaStar } from "react-icons/fa";
 import Footer from "../Footer";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 import Quantidade from "../Quantidade";
 import { Fade, Zoom } from "react-awesome-reveal";
 

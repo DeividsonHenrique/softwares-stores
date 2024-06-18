@@ -1,6 +1,4 @@
 import styles from "./Software003.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Carousel from "../Carousel";
 import { Fade } from "react-awesome-reveal";
 

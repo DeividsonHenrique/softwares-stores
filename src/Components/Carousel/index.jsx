@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import styles from "./Carousel.module.css";
 import { Zoom } from "react-awesome-reveal";
 
