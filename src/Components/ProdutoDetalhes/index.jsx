@@ -33,7 +33,7 @@ function ProdutoDetalhes() {
 
   useEffect(() => {
     const buscarProduto = async () => {
-      const response = await fetch(`../../public/data/Produtos.json`);
+      const response = await fetch(`https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/data/Produtos.json`);
       const data = await response.json();
       const produtoEncontrado = data.find((p) => p.id === parseInt(id));
       setProduto(produtoEncontrado);
