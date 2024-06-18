@@ -90,7 +90,7 @@ function ProdutoDetalhes() {
           <div className={styles.frete}>
             Frete Gratis
             <img
-              src="../../../src/assets/images/compras/frete.png"
+              src="/images/compras/frete.png"
               alt="frete-gratis"
             />
           </div>
@@ -129,27 +129,26 @@ function ProdutoDetalhes() {
 
             <div className={styles.bandeiras}>
               <img
-                src="/images/compras/mercadoPago.svg"
+                src="/images/compras/mercadoPago.svg" alt="mercado-pago"
               />
               <img
-                src="../../../src/assets/images/compras/visa.svg"
-                alt="frete-gratis"
+                src="/images/compras/visa.svg" alt="visa"
               />
               <img
                 src="/images/compras/mastercard.svg"
-                alt="frete-gratis"
+                alt="mastercard"
               />
               <img
-                src="../../../src/assets/images/compras/amex.svg"
-                alt="frete-gratis"
+                src="/images/compras/amex.svg"
+                alt="amex"
               />
               <img
-                src="../../../src/assets/images/compras/diners.svg"
-                alt="frete-gratis"
+                src="/images/compras/diners.svg"
+                alt="eloDiners"
               />
               <img
-                src="../../../src/assets/images/compras/pix.svg"
-                alt="frete-gratis"
+                src="/images/compras/pix.svg"
+                alt="pix"
               />
             </div>
 

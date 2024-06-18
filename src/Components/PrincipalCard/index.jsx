@@ -34,7 +34,7 @@ function PrincipalCard() {
     <> 
     <div className={styles.card} key={produto.id}>
       
-      <div className={styles.imagem}><img src={produto.imagem} alt={produto.nome} /></div>
+      <div className={styles.imagem}><img src={'/data/principaisProdutos/' + produto.imagem} alt={produto.nome} /></div>
 
       <h5>
         {produto.nome} <p>{produto.versao}</p>{" "}
