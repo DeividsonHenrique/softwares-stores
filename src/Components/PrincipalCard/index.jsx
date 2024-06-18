@@ -22,7 +22,7 @@ function PrincipalCard() {
 
   useEffect(() => {
     const buscarProdutos = async () => {
-      const response = await fetch("../../public/data/PrincipaisProdutos.json");
+      const response = await fetch("https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/data/PrincipaisProdutos.json");
       const data = await response.json();
       setProdutos(data);
     };
