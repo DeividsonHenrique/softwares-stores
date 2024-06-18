@@ -11,7 +11,7 @@ function TodosProdutos() {
 
   useEffect(() => {
     const buscarProdutos = async () => {
-      const response = await fetch("../../public/data/Produtos.json");
+      const response = await fetch("https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/data/Produtos.json");
       const data = await response.json();
       setProdutos(data);
     };
