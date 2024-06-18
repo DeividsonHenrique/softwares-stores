@@ -3,7 +3,7 @@
     "id": 1,
     "nome": "Topaz Video AI",
     "preco": "R$ 1600,00",
-    "imagem": "../../../src/assets/images/produtos/topaz_videoAI.svg",
+    "imagem": "/images/produtos/topaz_videoAI.svg",
     "descricao": "O Topaz Video AI é um software avançado de melhoramento de vídeos que utiliza técnicas de inteligência artificial (IA) para aprimorar a qualidade de vídeos de maneira significativa.",
     "empresa": "Topaz Labs",
     "versao": "2024",
