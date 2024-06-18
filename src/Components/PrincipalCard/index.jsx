@@ -22,7 +22,7 @@ function PrincipalCard() {
 
   useEffect(() => {
     const buscarProdutos = async () => {
-      const response = await fetch("https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/data/PrincipaisProdutos.json");
+      const response = await fetch('/data/PrincipaisProdutos.json');
       const data = await response.json();
       setProdutos(data);
     };
@@ -34,7 +34,7 @@ function PrincipalCard() {
     <> 
     <div className={styles.card} key={produto.id}>
       
-      <div className={styles.imagem}><img src={'https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/data/PrincipaisProdutos/'+ produto.imagem} alt={produto.nome} /></div>
+      <div className={styles.imagem}><img src={produto.imagem} alt={produto.nome} /></div>
 
       <h5>
         {produto.nome} <p>{produto.versao}</p>{" "}

@@ -33,7 +33,7 @@ function ProdutoDetalhes() {
 
   useEffect(() => {
     const buscarProduto = async () => {
-      const response = await fetch(`https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/data/Produtos.json`);
+      const response = await fetch('/data/Produtos.json');
       const data = await response.json();
       const produtoEncontrado = data.find((p) => p.id === parseInt(id));
       setProduto(produtoEncontrado);
@@ -129,15 +129,14 @@ function ProdutoDetalhes() {
 
             <div className={styles.bandeiras}>
               <img
-                src="../../../src/assets/images/compras/mercadoPago.svg"
-                alt="frete-gratis"
+                src="/images/compras/mercadoPago.svg"
               />
               <img
                 src="../../../src/assets/images/compras/visa.svg"
                 alt="frete-gratis"
               />
               <img
-                src="../../../src/assets/images/compras/mastercard.svg"
+                src="/images/compras/mastercard.svg"
                 alt="frete-gratis"
               />
               <img
