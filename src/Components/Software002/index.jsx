@@ -41,8 +41,7 @@ function Software002() {
           </ol>
           <Zoom delay={200} duration={500}>
             <img
-              src="../../../public/images/imagens_container/software-engineer.svg"
-              alt="software-engineer"
+              src="../../src/assets/images/exemplos/topaz/video/imagem1.png"
             />
           </Zoom>
         </div>
