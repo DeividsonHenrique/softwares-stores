@@ -35,7 +35,7 @@
     "sistema_operacional": ["windows.png", "macos.png"],
     "link_compra": "https://www.adobe.com/br/products/photoshop.html",
     "avaliacao": 4.7,
-    "imagens_exemplos": ["../../src/assets/images/exemplos/adobe/photoshop/imagem1.png", "../../src/assets/images/exemplos/adobe/photoshop/imagem2.png", "../../src/assets/images/exemplos/adobe/photoshop/imagem3.png"],
+    "imagens_exemplos": ["/images/exemplos/adobe/photoshop/imagem1.png", "/images/exemplos/adobe/photoshop/imagem2.png", "/images/exemplos/adobe/photoshop/imagem3.png"],
     "descricao_geral": "O Adobe Photoshop 2022 é um conjunto completo que oferece aos usuários tudo, desde edição e composição de fotos até pintura digital, animação e design gráfico. Este aplicativo inteligente usa a tecnologia Adobe Sensei AI, que trará aos fotógrafos várias opções diferentes, como Seleção P&B, Pincel Padrão, Pintura, Profundidade de Campo. Ele também oferece um novo modo de Simetria onde você pode pintar em perfeita simetria e permite definir seus eixos e selecionar padrões predefinidos como circular, radial, mandala e espiral. quadros que podem ser usados ​​como placeholders em sua tela.",
     "caracteristicas": [
       "Poderoso aplicativo de edição gráfica que permite criar e aprimorar suas fotografias, sites e designs de aplicativos móveis.",
@@ -70,7 +70,7 @@
     ],
     "link_compra": "https://slack.com/",
     "avaliacao": 4.6,
-    "imagens_exemplos": ["../../src/assets/images/exemplos/slack/imagem1.png", "../../src/assets/images/exemplos/slack/imagem2.png", "../../src/assets/images/exemplos/slack/imagem3.png"],
+    "imagens_exemplos": ["/images/exemplos/slack/imagem1.png", "/images/exemplos/slack/imagem2.png", "/images/exemplos/slack/imagem3.png"],
     "descricao_geral": "Slack é uma poderosa ferramenta de comunicação e colaboração que tem transformado a forma como as equipes trabalham juntas. Com suas funcionalidades abrangentes, integração com outros aplicativos e foco na centralização das comunicações, o Slack continua a ser uma escolha popular para empresas que desejam melhorar a produtividade e a comunicação interna. Apesar de algumas limitações, como custo e potencial para sobrecarga de notificações, seus benefícios superam amplamente essas desvantagens para a maioria das organizações.",
     "caracteristicas": [
       "Canais Públicos: Permitem que qualquer membro da equipe participe e visualize as conversas, promovendo a transparência.",
@@ -98,7 +98,7 @@
     "sistema_operacional": ["windows.png", "macos.png"],
     "link_compra": "https://www.topazlabs.com/gigapixel",
     "avaliacao": 4.9,
-    "imagens_exemplos": ["../../src/assets/images/exemplos/topaz/gigapixel/imagem1.png", "../../src/assets/images/exemplos/topaz/gigapixel/imagem2.png", "../../src/assets/images/exemplos/topaz/gigapixel/imagem3.png"],
+    "imagens_exemplos": ["/images/exemplos/topaz/gigapixel/imagem1.png", "/images/exemplos/topaz/gigapixel/imagem2.png", "/images/exemplos/topaz/gigapixel/imagem3.png"],
     "descricao_geral": "O Topaz Gigapixel AI é uma ferramenta poderosa e inovadora para upscaling de imagens, oferecendo resultados que superam os métodos tradicionais de aumento de resolução. Sua capacidade de preservar e recuperar detalhes finos torna-o uma escolha excelente para profissionais que exigem qualidade de imagem superior. Apesar dos requisitos de hardware e custo, seus benefícios em termos de qualidade e usabilidade fazem dele uma ferramenta valiosa para qualquer pessoa que trabalhe com imagens de alta resolução.",
     "caracteristicas": [
       "Utiliza algoritmos avançados de aprendizado profundo para aumentar a resolução de imagens, preservando detalhes e nitidez. Pode aumentar imagens até 600% (ou 6 vezes o tamanho original).",
@@ -122,7 +122,7 @@
     "sistema_operacional": ["windows.png", "macos.png"],
     "link_compra": "https://www.autodesk.com/products/autocad/overview",
     "avaliacao": 4.4,
-    "imagens_exemplos": ["../../src/assets/images/exemplos/autodesk/imagem1.png", "../../src/assets/images/exemplos/autodesk/imagem2.png", "../../src/assets/images/exemplos/autodesk/imagem3.png"],
+    "imagens_exemplos": ["/images/exemplos/autodesk/imagem1.png", "/images/exemplos/autodesk/imagem2.png", "/images/exemplos/autodesk/imagem3.png"],
     "descricao_geral": "O Autodesk AutoCAD 2022 é um software útil e eficaz que fornece muitos desenhos de amostra que podem ser usados ​​e modificados para criar objetos profissionais. Essas amostras desempenham um papel vital na produção de documentação 2D, bem como desenhos. Ele também tem a capacidade de importar mapas e montagens de outros aplicativos, bem como anexar outros desenhos ao desenho que está sendo criado pelo usuário. Com esta ferramenta inteligente, os usuários podem escrever e executar scripts de Visual Basic, Visual LISP e VBA Macro para automatizar determinados recursos. Ele também usa uma combinação de ferramentas de modelagem de sólidos, superfícies e malhas para criar modelos 3D realistas de seu projeto. Além disso, os documentos podem ser criados pelos usuários para definir Padrões e todos os outros arquivos podem ser comparados com eles. No final, os usuários podem salvá-los como arquivos DWG, DWS e DXF.",
     "caracteristicas": [
       "Excelente design assistido por computador (CAD) que pode ser usado para criar desenhos 2D e 3D precisos.",

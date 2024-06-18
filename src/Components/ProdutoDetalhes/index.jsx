@@ -13,11 +13,11 @@ import ImageMagnifier from "../ImageMagnifier";
 
 // Imagens locais
 
-import windowsImg from "../../assets/images/icons/windows.png";
-import macImg from "../../assets/images/icons/macos.png";
-import linuxImg from "../../assets/images/icons/linux.png";
-import androidImg from "../../assets/images/icons/android.png";
-import iosImg from "../../assets/images/icons/ios.png";
+import windowsImg from "/images/icons/windows.png";
+import macImg from "/images/icons/macos.png";
+import linuxImg from "/images/icons/linux.png";
+import androidImg from "/images/icons/android.png";
+import iosImg from "/images/icons/ios.png";
 
 const imagensSistemaOperacional = {
   "windows.png": windowsImg,
@@ -58,6 +58,7 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
       <div key={produto.id} className={styles.detalhes}>
         <div className={styles.quadro_1}>
+        <ImageMagnifier src={produto.imagem}  />
           {/* <ReactImageMagnify
             {...{
               smallImage: {

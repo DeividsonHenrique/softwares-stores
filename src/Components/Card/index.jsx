@@ -3,11 +3,11 @@ import styles from "./Card.module.css";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import windowsImg from "../../assets/images/icons/windows.png";
-import macImg from "../../assets/images/icons/macos.png";
-import linuxImg from "../../assets/images/icons/linux.png";
-import androidImg from "../../assets/images/icons/android.png";
-import iosImg from "../../assets/images/icons/ios.png";
+import windowsImg from "/images/icons/windows.png";
+import macImg from "/images/icons/macos.png";
+import linuxImg from "/images/icons/linux.png";
+import androidImg from "/images/icons/android.png";
+import iosImg from "/images/icons/ios.png";
 
 const imagensSistemaOperacional = {
   "windows.png": windowsImg,

@@ -41,7 +41,7 @@ function Software002() {
           </ol>
           <Zoom delay={200} duration={500}>
             <img
-              src="https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/public/images/imagens_container/software-engineer.svg"
+              src="/images/container/engineer.svg" alt="Engineer"
             />
           </Zoom>
         </div>
