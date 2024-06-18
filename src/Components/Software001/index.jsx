@@ -16,7 +16,7 @@ function Software001() {
           <div className={styles.img_software}>
           
             <img
-              src="../../../src/assets/logo.svg"
+              src="https://raw.githubusercontent.com/DeividsonHenrique/softwares-stores/main/src/assets/Logo.svg"
               alt=""
             />
             
