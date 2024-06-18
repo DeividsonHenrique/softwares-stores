@@ -4,6 +4,7 @@ import ProdutoDetalhes from "./Components/ProdutoDetalhes";
 import Contato from "./Pages/Contato";
 import TodosProdutos from "./Pages/TodosProdutos";
 import Carrinho from "./Pages/Carrinho";
+import ImageMagnifier from "./Components/ImageMagnifier";
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/todos_produtos" element={<TodosProdutos />} />
         <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/imagem" element={<ImageMagnifier />} />
       </Routes>
     </BrowserRouter>
   );

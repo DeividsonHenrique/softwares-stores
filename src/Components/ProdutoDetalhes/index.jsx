@@ -8,6 +8,7 @@ import Footer from "../Footer";
 // import ReactImageMagnify from "react-image-magnify";
 import Quantidade from "../Quantidade";
 import { Fade, Zoom } from "react-awesome-reveal";
+import ImageMagnifier from "../ImageMagnifier";
 
 
 // Imagens locais
@@ -57,7 +58,7 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
       <div key={produto.id} className={styles.detalhes}>
         <div className={styles.quadro_1}>
-          <ReactImageMagnify
+          {/* <ReactImageMagnify
             {...{
               smallImage: {
                 alt: produto.nome,
@@ -75,7 +76,7 @@ function ProdutoDetalhes() {
                 height: 600,
               },
             }}
-          />
+          /> */}
           
         </div>
         <div className={styles.quadro_2}>
@@ -191,7 +192,8 @@ function ProdutoDetalhes() {
         <Fade duration={750} direction="left" className={styles.section}>
         <div className={styles.imagens_exemplos}>
           <div className={styles.imagem}>
-            <ReactImageMagnify
+          <ImageMagnifier src={produto.imagens_exemplos[0]}  />
+            {/* <ReactImageMagnify
               {...{
                 smallImage: {
                   alt: produto.nome,
@@ -209,10 +211,11 @@ function ProdutoDetalhes() {
                   height: 750,
                 },
               }}
-            />
+            /> */}
           </div>
           <div className={styles.imagem}>
-            <ReactImageMagnify
+          <ImageMagnifier src={produto.imagens_exemplos[1]}  />
+            {/* <ReactImageMagnify
               {...{
                 smallImage: {
                   alt: produto.nome,
@@ -230,29 +233,11 @@ function ProdutoDetalhes() {
                   height: 750,
                 },
               }}
-            />
+            /> */}
           </div>
 
           <div className={styles.imagem}>
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: produto.nome,
-                  isFluidWidth: true,
-                  src: produto.imagens_exemplos[2],
-                },
-                largeImage: {
-                  src: produto.imagens_exemplos[2],
-                  width: 1000,
-                  height: 750,
-                },
-                enlargedImagePosition: "over",
-                enlargedImageContainerDimensions: {
-                  width: 1000,
-                  height: 750,
-                },
-              }}
-            />
+            <ImageMagnifier src={produto.imagens_exemplos[2]}  />
           </div> 
         </div>
         </Fade>
