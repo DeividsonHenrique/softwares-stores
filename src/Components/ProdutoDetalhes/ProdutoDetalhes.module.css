@@ -10,14 +10,21 @@
 
 
 .quadro_1 {
-    width: 30%;
+    width: auto;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 50px;
     background-color: white;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #181818;
     border: 5px solid salmon;
+}
+
+.quadro_1 img{
+    height: 400px;
 }
 
 
@@ -262,10 +269,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 30%;
+    height: 100%;
+    width: auto;
     margin-inline: 10px;
     border-radius: 10px;
     z-index: 5555555;
     overflow: hidden;
+}
+
+
+.imagem img{
+    height: 90%;
 }

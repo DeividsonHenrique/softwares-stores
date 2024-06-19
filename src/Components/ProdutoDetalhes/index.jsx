@@ -8,7 +8,7 @@ import Footer from "../Footer";
 // import ReactImageMagnify from "react-image-magnify";
 import Quantidade from "../Quantidade";
 import { Fade, Zoom } from "react-awesome-reveal";
-import ImageMagnifier from "../ImageMagnifier";
+// import ImageMagnifier from "../ImageMagnifier";
 
 
 // Imagens locais
@@ -58,7 +58,8 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
       <div key={produto.id} className={styles.detalhes}>
         <div className={styles.quadro_1}>
-        <ImageMagnifier src={produto.imagem}  />
+        {/* <ImageMagnifier src={produto.imagem} style={{width: '10%', height: '10%'}}/> */}
+        <img src={produto.imagem} alt="" />
           {/* <ReactImageMagnify
             {...{
               smallImage: {
@@ -190,8 +191,10 @@ function ProdutoDetalhes() {
         </div>
         <Fade duration={750} direction="left" className={styles.section}>
         <div className={styles.imagens_exemplos}>
+        
           <div className={styles.imagem}>
-          <ImageMagnifier src={produto.imagens_exemplos[0]}  />
+          <img src={produto.imagens_exemplos[0]} alt="imagens" />
+          {/* <ImageMagnifier src={produto.imagens_exemplos[0]}  /> */}
             {/* <ReactImageMagnify
               {...{
                 smallImage: {
@@ -213,7 +216,8 @@ function ProdutoDetalhes() {
             /> */}
           </div>
           <div className={styles.imagem}>
-          <ImageMagnifier src={produto.imagens_exemplos[1]}  />
+          <img src={produto.imagens_exemplos[1]} alt="imagens" />
+          {/* <ImageMagnifier src={produto.imagens_exemplos[1]}  /> */}
             {/* <ReactImageMagnify
               {...{
                 smallImage: {
@@ -236,7 +240,8 @@ function ProdutoDetalhes() {
           </div>
 
           <div className={styles.imagem}>
-            <ImageMagnifier src={produto.imagens_exemplos[2]}  />
+          <img src={produto.imagens_exemplos[2]} alt="imagens" />
+            {/* <ImageMagnifier src={produto.imagens_exemplos[2]}  /> */}
           </div> 
         </div>
         </Fade>

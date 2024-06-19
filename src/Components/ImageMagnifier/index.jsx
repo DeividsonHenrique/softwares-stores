@@ -7,21 +7,21 @@ import styled from "styled-components";
 
 const MagnifierContainer = styled.div`
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 750px;
   border: 1px solid #ddd;
   overflow: hidden;
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 1000px;
+  height: 750px;
 `;
 
 const Lens = styled.div`
   position: absolute;
   width: 1000px;
-  height: 1000px;
+  height: 750px;
   background: rgba(255, 255, 255, 0.4);
   display: ${({ show }) => (show ? 'block' : 'none')};
   cursor: pointer;
@@ -67,7 +67,7 @@ function ImageMagnifier({ src }) {
       <Image ref={imgRef} src={src} alt="Magnifiable" />
       <Lens
         style={{
-          top: lensPosition.y - 500,
+          top: lensPosition.y - 375,
           left: lensPosition.x - 500,
         }}
         show={showLens}
@@ -76,7 +76,7 @@ function ImageMagnifier({ src }) {
           src={src}
           alt="Zoomed"
           style={{
-            top: -(lensPosition.y * 2 - 500),
+            top: -(lensPosition.y * 2 - 375),
             left: -(lensPosition.x * 2 - 500),
           }}
         />
