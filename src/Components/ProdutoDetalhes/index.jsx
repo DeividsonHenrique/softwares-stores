@@ -5,10 +5,9 @@ import styles from "./ProdutoDetalhes.module.css";
 import Header from "../Header";
 import { FaStar } from "react-icons/fa";
 import Footer from "../Footer";
-// import ReactImageMagnify from "react-image-magnify";
 import Quantidade from "../Quantidade";
-import { Fade, Zoom } from "react-awesome-reveal";
-// import ImageMagnifier from "../ImageMagnifier";
+import { Fade, Zoom as RevealZoom } from "react-awesome-reveal";
+import Zoom from 'react-medium-image-zoom'
 
 
 // Imagens locais
@@ -58,28 +57,7 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
       <div key={produto.id} className={styles.detalhes}>
         <div className={styles.quadro_1}>
-        {/* <ImageMagnifier src={produto.imagem} style={{width: '10%', height: '10%'}}/> */}
-        <img src={produto.imagem} alt="" />
-          {/* <ReactImageMagnify
-            {...{
-              smallImage: {
-                alt: produto.nome,
-                isFluidWidth: true,
-                src: produto.imagem,
-              },
-              largeImage: {
-                src: produto.imagem,
-                width: 800,
-                height: 800,
-              },
-              enlargedImagePosition: "over",
-              enlargedImageContainerDimensions: {
-                width: 600,
-                height: 600,
-              },
-            }}
-          /> */}
-          
+          <img src={produto.imagem} alt="" />
         </div>
         <div className={styles.quadro_2}>
           <h1 className={styles.titulo}>{produto.nome}</h1>
@@ -164,9 +142,9 @@ function ProdutoDetalhes() {
       </div>
       
       </Fade>
-      <Zoom duration={750} delay={250}>
+      <RevealZoom duration={750} delay={250}>
       <hr className={styles.divisor} />
-      </Zoom>
+      </RevealZoom>
 
       <div className={styles.geral}>
         <Fade duration={750} triggerOnce>
@@ -189,62 +167,29 @@ function ProdutoDetalhes() {
             </Fade>
           </ul>
         </div>
-        <Fade duration={750} direction="left" className={styles.section}>
-        <div className={styles.imagens_exemplos}>
-        
-          <div className={styles.imagem}>
+        <RevealZoom duration={750}  className={styles.section}>
+          <h3>Imagens exemplo:</h3>
+        <section className={styles.imagem}>
+          
+            <Zoom>
+          
           <img src={produto.imagens_exemplos[0]} alt="imagens" />
-          {/* <ImageMagnifier src={produto.imagens_exemplos[0]}  /> */}
-            {/* <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: produto.nome,
-                  isFluidWidth: true,
-                  src: produto.imagens_exemplos[0],
-                },
-                largeImage: {
-                  src: produto.imagens_exemplos[0],
-                  width: 1000,
-                  height: 750,
-                },
-                enlargedImagePosition: "over",
-                enlargedImageContainerDimensions: {
-                  width: 1000,
-                  height: 750,
-                },
-              }}
-            /> */}
-          </div>
-          <div className={styles.imagem}>
-          <img src={produto.imagens_exemplos[1]} alt="imagens" />
-          {/* <ImageMagnifier src={produto.imagens_exemplos[1]}  /> */}
-            {/* <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: produto.nome,
-                  isFluidWidth: true,
-                  src: produto.imagens_exemplos[1],
-                },
-                largeImage: {
-                  src: produto.imagens_exemplos[1],
-                  width: 1000,
-                  height: 750,
-                },
-                enlargedImagePosition: "over",
-                enlargedImageContainerDimensions: {
-                  width: 1000,
-                  height: 750,
-                },
-              }}
-            /> */}
-          </div>
+          
+          </Zoom>
 
-          <div className={styles.imagem}>
+          <Zoom>
+         
+          <img src={produto.imagens_exemplos[1]} alt="imagens" />
+          
+          </Zoom>
+
+          <Zoom>
+          
           <img src={produto.imagens_exemplos[2]} alt="imagens" />
-            {/* <ImageMagnifier src={produto.imagens_exemplos[2]}  /> */}
-          </div> 
-        </div>
-        </Fade>
+          
+          </Zoom>
+        </section>
+        </RevealZoom>
       </div>
       
       <Fade>
