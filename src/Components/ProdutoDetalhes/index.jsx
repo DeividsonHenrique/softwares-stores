@@ -8,6 +8,7 @@ import Footer from "../Footer";
 import Quantidade from "../Quantidade";
 import { Fade, Zoom as RevealZoom } from "react-awesome-reveal";
 import Zoom from 'react-medium-image-zoom'
+import ImageMagnifier from "../ImageMagnifier";
 
 
 // Imagens locais
@@ -57,7 +58,7 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
       <div key={produto.id} className={styles.detalhes}>
         <div className={styles.quadro_1}>
-          <img src={produto.imagem} alt="" />
+          <ImageMagnifier src={produto.imagem} alt={produto.nome} />
         </div>
         <div className={styles.quadro_2}>
           <h1 className={styles.titulo}>{produto.nome}</h1>

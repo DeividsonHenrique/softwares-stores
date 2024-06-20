@@ -72,3 +72,20 @@
 .ver_todos:hover {
     background-color: darkgreen;
 }
+
+@media screen and (max-width: 1280px){
+    .secao_produtos{
+        padding-top: 100px;
+    }
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .ver_todos{
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}

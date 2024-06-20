@@ -45,3 +45,9 @@
 .mais img {
     height: 350px;
 }
+
+@media screen and (max-width: 1280px) {
+    .container{
+        padding-top: 100px;
+    }
+}

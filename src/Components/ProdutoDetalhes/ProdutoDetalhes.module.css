@@ -10,8 +10,8 @@
 
 
 .quadro_1 {
-    width: auto;
-    height: auto;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +23,7 @@
     border: 5px solid salmon;
 }
 
-.quadro_1 img{
-    height: 400px;
-}
+
 
 
 

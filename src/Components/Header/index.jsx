@@ -5,7 +5,7 @@ function Header() {
   const navLink = ({ isActive }) => {
     return {
       color: isActive ? "white" : "black",
-      padding: "11px 5px",
+      padding: "10px 5px",
       margin: "0 10px",
       borderRadius: "20px",
       background: isActive ? "#333" : "#F5F5F5",
@@ -13,6 +13,7 @@ function Header() {
       boxShadow: isActive
         ? "0 0 10px rgba(0, 0, 0, 0.5)"
         : "0 0 10px rgba(0, 0, 0, 0.12)",
+
     };
   };
 
