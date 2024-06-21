@@ -1,5 +1,8 @@
 import styles from "./Header.module.css";
 import { NavLink, Link } from "react-router-dom";
+import { FaShoppingCart, FaBars  } from "react-icons/fa";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 
 function Header() {
   const navLink = ({ isActive }) => {
@@ -10,9 +13,9 @@ function Header() {
     let padding;
 
     if (smallScreen.matches) {
-      padding = "3px 1px";
+      padding = "5px 0px";
     } else if (mediumScreen.matches) {
-      padding = "10px 0px";
+      padding = "5px 0px";
     } else if (largeScreen.matches) {
       padding = "10px 5px";
     }
@@ -25,6 +28,13 @@ function Header() {
       fontWeight: "bold",
       transition: "all 0.3s ease",
     };
+  };
+
+
+  const [isNavVisible, setIsNavVisible] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible);
   };
 
   return (
@@ -48,10 +58,32 @@ function Header() {
             </NavLink>
           </ul>
           <Link to="/carrinho">
-            <button className={styles.carrinho}>Carrinho</button>
+            <button className={styles.carrinho}><FaShoppingCart /> Carrinho</button>
+            <FaShoppingCart className={styles.iconCart} />
           </Link>
         </nav>
       </section>
+
+      <FaBars className={styles.iconBars} onClick={toggleNav} />
+      <div className={`${styles.nav_header} ${isNavVisible ? styles.visible : ""} `} onClick={toggleNav}>
+      <IoClose className={styles.iconClose} onClick={toggleNav} />
+        <nav>
+          <ul>
+            <NavLink className={styles.navLink} exact to="/">
+              Início
+            </NavLink>
+
+            <NavLink className={styles.navLink} to="/todos_produtos">
+              Produtos
+            </NavLink>
+
+            <NavLink className={styles.navLink} to="/contato">
+              Contato
+            </NavLink>
+          </ul>
+          
+        </nav>
+      </div>
     </>
   );
 }

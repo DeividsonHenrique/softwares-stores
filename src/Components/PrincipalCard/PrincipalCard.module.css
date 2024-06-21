@@ -113,6 +113,7 @@
     background-color: darkgreen;
 }
 
+
 @media screen and (max-width: 1280px){
     .card{
         height: 260px;
@@ -194,4 +195,10 @@
         font-size: .9rem;
     }
     
+}
+
+@media screen and (max-width: 533px){
+    .card{
+        margin: 5px;
+    }
 }

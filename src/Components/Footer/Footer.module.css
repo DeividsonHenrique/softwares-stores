@@ -165,3 +165,19 @@ iframe{
         height: 90px;
     }
 }
+
+
+@media screen and (min-width:300px) and (max-width: 478px){
+
+    .footer h1{
+        font-size: .6rem;
+    }
+
+    .footer p{
+        font-size: .7rem;
+    }
+
+    iframe{
+        display: none;
+    }
+}

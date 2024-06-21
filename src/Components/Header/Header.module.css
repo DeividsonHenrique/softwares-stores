@@ -58,12 +58,78 @@ ul .lista {
     transition: .3s ease-in;
     font-size: 1.125rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .carrinho:hover {
     background-color: #008000;
 }
 
+.iconCart{
+    display: none;
+}
+
+
+.iconBars{
+    display: none;
+}
+
+
+/* menu nav */
+
+.nav_header{
+    position: fixed;
+    top: 40px;
+    right: 0;
+    min-height: 100vh;
+    background: transparent;
+    width: 0%;
+    z-index: 9999;
+    transition: width .3s ease-in;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+
+    display: none;
+}
+
+.nav_header.visible{
+    width: 100%;
+}
+
+.nav_header nav{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    background-color: #181818;
+}
+
+.nav_header nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.nav_header .navLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    transition: .3s ease-in;
+    font-weight: 300
+}
+
+.iconClose{
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 25%;
+    transform: translateX(50%);
+    color: red;
+}
 
 /* width de 1280px */
 
@@ -124,8 +190,48 @@ ul .lista {
     }
 
     .carrinho{
-        font-size: .8rem;
-        padding: 5px 10px;
+        display: none;
+    }
+
+    .iconCart{
+        display: block;
+        color: #1FCC44;
     }
     
+}
+
+
+@media screen and (min-width:300px) and (max-width: 478px){
+    .header{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .header .iconCart{
+        position: absolute;
+        right: 60px;
+        top: 10px;
+        font-size: 20px;
+    }
+
+    .nav_header{
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .iconBars{
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        color: black;
+        z-index: 9999;
+        font-size: 20px;
+    }
 }

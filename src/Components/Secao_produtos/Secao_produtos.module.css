@@ -120,3 +120,18 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (min-width:300px) and (max-width: 478px){
+    .ver_todos{
+        width: 150px;
+        height: 30px;
+        font-size: .8rem;
+        
+    }
+
+    .secao_produtos{
+        width: 100%;
+    }
+}
+
+
