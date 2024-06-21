@@ -166,29 +166,5 @@
       "Permite criar cópias de linhas a uma distância uniforme das originais e mover, girar, esticar, distorcer ou copiar os componentes.",
       "Permite redimensionar e esticar partes da geometria, criar linhas-guia, incorporar mensagens de texto e colorir objetos."
     ]
-  },
-
-  {
-    "id": 7,
-    "nome": "Microsoft Office",
-    "preco": "R$ 359,00",
-    "imagem": "/images/produtos/office.svg",
-    "descricao": "Suíte de produtividade essencial, incluindo Word, Excel e PowerPoint.",
-    "empresa": "Microsoft",
-    "versao": "2021",
-    "data_lancamento": "2021-10-05",
-    "sistema_operacional": ["windows.png", "macos.png"],
-    "link_compra": "https://www.microsoft.com/microsoft-365",
-    "avaliacao": "4.6",
-    "imagens_exemplos": ["", "", ""],
-    "descricao_geral": "Nossa equipe conta com profissionais certificados e altamente competentes que irão lhe auxiliar em seu projeto de licenciamento. Benefícios: O Office 2021 Professional Plus ajuda você a criar, apresentar, comunicar e publicar documentos de aparência profissional com recursos que poupam tempo, têm uma aparência moderna e contam com ferramentas de colaboração. Salve o seu trabalho na nuvem no OneDrive e acesse em qualquer lugar.",
-    "caracteristicas": [
-      "Mantenha você e sua família mais seguros de forma online com monitoramento contínuo de ameaças, alertas em tempo real, dicas e orientações de especialistas do Microsoft Defender.",
-      "O Pacote Office 2021 Professional Plus inclui Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word e Skype for Business.",
-      "Com o Outlook, você pode passar menos tempo organizando sua vida e mais tempo aproveitando-a.",
-      "ransforme facilmente memórias capturadas em belos vídeos com o Clipchamp e o Microsoft 365.",
-      "Salve, compartilhe e edite rapidamente suas fotos e arquivos com o OneDrive e o Microsoft 365.",
-      "Inspire-se com textos, áudios, fotos e vídeos para criar sua próxima grande ideia com o OneNote."
-    ]
   }
 ]

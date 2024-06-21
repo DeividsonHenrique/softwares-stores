@@ -33,31 +33,27 @@ strong {
     font-weight: 900;
 }
 
-.imagens {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
 .carousel img {
-    height: 295px;
+    height: auto;
+    width: 97%;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #181818;
+    user-select: none;
 }
 
 .carousel {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
     border-radius: 10px;
+    user-select: none;
+    
 }
 
-.imagens::after {
+.teste::after {
     position: absolute;
     content: "";
     background: linear-gradient(90deg, #181818, transparent);
@@ -66,10 +62,10 @@ strong {
     height: 100%;
     z-index: 1222;
     top: 0;
-    left: 0;
+    left: -1px;
 }
 
-.imagens::before {
+.teste::before {
     position: absolute;
     content: "";
     background: linear-gradient(90deg, transparent, #181818);
@@ -78,14 +74,56 @@ strong {
     height: 100%;
     z-index: 1222;
     top: 0;
-    right: 0;
+    right: -1px;
 }
 
 
 .teste {
-    width: 100%;
+    position: relative;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .store h3 {
+        font-size: 1.2rem;
+    }
+
+    .store ul li {
+        font-size: .8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .store h3 {
+        font-size: 1rem;
+    }
+
+    .store ul li {
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+
+    strong {
+        font-size: .7rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .store ul li {
+        font-size: .7rem;
+        margin-bottom: 5px;
+    }
 }

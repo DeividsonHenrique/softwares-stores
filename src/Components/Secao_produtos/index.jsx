@@ -18,6 +18,7 @@ function Secao_produtos() {
             delay={100}
             duration={300}
             direction="down"
+            triggerOnce
             className={styles.card}
           >
             <PrincipalCard />

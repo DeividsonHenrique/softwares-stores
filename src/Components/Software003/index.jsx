@@ -34,7 +34,7 @@ function Software003() {
           </Fade>
         </ul>
         <Fade className={styles.teste} delay={400}>
-          <div className={styles.imagens}>
+          
             <Carousel>
               <div className={styles.carousel}>
                 <img
@@ -63,7 +63,7 @@ function Software003() {
                 />
               </div>
             </Carousel>
-          </div>
+          
         </Fade>
       </section>
     </>

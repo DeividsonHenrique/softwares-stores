@@ -6,6 +6,7 @@ import { Zoom } from "react-awesome-reveal";
 function ImageCarousel({ children }) {
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,

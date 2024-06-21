@@ -6,6 +6,7 @@
     background-color: black;
     color: white;
     width: 100%;
+    height: auto;
 }
 
 .footer h1{
@@ -101,5 +102,66 @@ iframe{
 
     &:hover{
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .footer h2{
+        font-size: 1rem;
+    }
+
+    .col1 p{
+        font-size: .9rem;
+    }
+
+    .footer h1{
+        font-size: .8rem;
+    }
+
+    .footer h3{
+        font-size: 1rem;
+    }
+
+    .link{
+        font-size: .9rem;
+    }
+    
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px){
+    .footer h3{
+        font-size: 1rem;
+    }
+
+    iframe{
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+    .footer p{
+            font-size: .8rem;
+    }
+
+    .footer h3{
+        font-size: .9rem;
+    }
+
+
+    iframe{
+        width: 100px;
+        height: 90px;
     }
 }

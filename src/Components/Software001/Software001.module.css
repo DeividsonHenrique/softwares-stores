@@ -88,9 +88,9 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .home {
-        padding-top: 100px;
-    }
+    /* .home {
+        padding-top: 20px;
+    } */
 
     .home h1{
         font-size: 1.5rem;
@@ -105,4 +105,50 @@
         font-size: 1.4em;
         height: 250px;
     }
+}
+
+@media screen and (max-width: 992px) {
+
+    .home h1{
+        font-size: 1.2rem;
+    }
+
+    .img_software{
+        height: 200px;
+        width: 300px;
+    }
+
+    .text{
+        font-size: 1em;
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .home{
+        width: 95%;
+    }
+
+
+    .home h1{
+        font-size: 1rem;
+    }
+
+    .img_software{
+        width: 200px;
+        height: 200px;
+    }
+
+    .img_software img{
+        height: 200px;
+    }
+
+    .text{
+         width: 50%;
+         height: auto;
+         font-size: .9rem;
+         text-align: center;
+    }
+    
 }

@@ -44,6 +44,7 @@ ul .lista {
     cursor: pointer;
     font-size: 1.125rem;
     font-weight: 500;
+    margin: 10px;
 }
 
 .carrinho {
@@ -86,12 +87,45 @@ ul .lista {
 }
 
 
+/* width de 992px */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px){
     .header{
-        background-color: green;
+        height: 50px;
+    }
+
+    .header h2{
+        font-size: 1rem;
+    }
+
+    ul .lista{
+        font-size: .9rem;
+    }
+
+    .carrinho{
+        font-size: .9rem;
+        padding: 5px 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .header{
+        height: 40px;
+    }
+
+    .header h2{
+        font-size: .9rem;
+    }   
+
+    ul .lista{
+        font-size: .8rem;
+        padding:  0px;
+    }
+
+    .carrinho{
+        font-size: .8rem;
+        padding: 5px 10px;
     }
     
-    
-
 }

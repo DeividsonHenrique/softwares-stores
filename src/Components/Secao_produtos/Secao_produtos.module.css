@@ -73,9 +73,19 @@
     background-color: darkgreen;
 }
 
+@media screen and (max-width: 992px){
+    /* .ver_todos{
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+    } */
+}
+
+
 @media screen and (max-width: 1280px){
     .secao_produtos{
-        padding-top: 100px;
+        padding-top: 90px;
     }
 
     .titulo{
@@ -86,6 +96,27 @@
         margin-top: 10px;
         width: 200px;
         height: 40px;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .titulo{
+        font-size: 1.2rem;
+    }
+
+    .ver_todos{
+        margin-top: 10px;
+        width: 180px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .titulo{
         font-size: 1rem;
     }
 }
