@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import 'react-medium-image-zoom/dist/styles.css'
 import styles from "./ProdutoDetalhes.module.css";
 import Header from "../Header";
 import { FaStar } from "react-icons/fa";
