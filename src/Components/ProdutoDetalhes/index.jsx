@@ -103,7 +103,7 @@ function ProdutoDetalhes() {
             >
               Comprar
             </Link>
-            <Link className={styles.botao_comprar}>Adicionar ao carrinho</Link>
+            <Link className={` ${styles.botao_comprar} ${styles.botao_adicionar}`}><p>Adicionar ao carrinho</p></Link>
           </div>
 
           <div className={styles.pagamentos}>

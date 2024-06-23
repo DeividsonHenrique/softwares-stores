@@ -122,3 +122,43 @@
   color: blue;
   margin-right: 2px;
 }
+
+
+@media screen and (max-width: 992px) {
+  .header{
+    font-size: 1rem;
+  }
+
+  .contato{
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .contato h3{
+    font-size: .8rem;
+  }
+
+  .contato p{
+    font-size: .8rem;
+  }
+
+  .label{
+    font-size: .8rem;
+  }
+
+  .input{
+    padding: 5px;
+  }
+  .textarea{
+    max-height: 50px;
+    min-height: 50px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .socialList{
+    flex-wrap: wrap;
+    font-size: .8rem;
+    gap: 10px;
+  }
+}

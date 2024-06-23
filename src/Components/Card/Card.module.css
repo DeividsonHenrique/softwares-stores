@@ -1,6 +1,6 @@
 .card {
     background-color: #333;
-    height: 355px;
+    height: 360px;
     width: 200px;
     position: relative;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 
 .card img {
-    height: 120px;
+    height: 150px;
     transition: .3s ease-in-out;
 }
 
@@ -41,7 +41,8 @@
     text-align: center;
 
     p {
-        font-size: .7rem;
+        margin-inline: 5px;
+        font-size: .8rem;
         font-weight: 300;
         color: aqua;
     }
@@ -71,7 +72,6 @@
 .preco {
     text-align: center;
     color: lightgreen;
-    font-size: .9rem;
 }
 
 .avaliacao {
@@ -101,7 +101,7 @@
     font-weight: 500;
     transition: .3s all;
     position: absolute;
-    bottom: 10px;
+    bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
@@ -111,4 +111,96 @@
 
 .btn:hover {
     background-color: darkgreen;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+    .card{
+        height: 275px;
+        width: 140px;
+    }
+
+    .imagem{
+        height: 120px;
+    }
+
+    .imagem img{
+        height: 100px;
+    }
+
+    .card h5{
+        font-size: .8rem;
+        margin-bottom: -5px;
+
+        p{
+            font-size: .6rem;
+        }
+    }
+
+    .plataforma{
+        padding-bottom: .2rem;
+    }
+
+    .plataforma img{
+        height: 15px;
+        width: 15px;
+    }
+
+    .preco{
+        font-size: .8rem;
+    }
+
+    .avaliacao{
+        top: 120px;
+    }
+
+    .btn{
+        font-size: 1rem;
+        height: 25px;
+        line-height: 25px;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .card{
+        height: 270px;
+        width: 140px;
+    }
+
+    .imagem{
+        height: 110px;
+    }
+
+    .imagem img{
+        height: 80px;
+    }
+
+    .card h5{
+        font-size: .8rem;
+        margin-bottom: -5px;
+    }
+
+    .plataforma{
+        padding-block: .3rem;
+    }
+
+    .avaliacao{
+        top: 110px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .9rem;
+    }
+    
+}
+
+@media screen and (max-width: 533px){
+    .card{
+        margin: 5px;
+    }
 }

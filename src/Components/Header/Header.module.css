@@ -196,12 +196,13 @@ ul .lista {
     .iconCart{
         display: block;
         color: #1FCC44;
+        margin-left: 10px;
     }
     
 }
 
 
-@media screen and (min-width:300px) and (max-width: 478px){
+@media screen and (max-width: 478px){
     .header{
         text-align: center;
         justify-content: center;

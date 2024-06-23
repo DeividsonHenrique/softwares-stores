@@ -291,3 +291,50 @@ section.imagem {
     transition: transform 0.5s;
     transition-timing-function: ease-in-out;
 }
+
+
+
+
+@media screen and (max-width: 1366px){
+    .quadro_1{
+        width: 350px;
+        height: 350px;
+    }
+
+    .quadro_2{
+        width: 50%;
+    }
+
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .versao{
+        font-size: .8rem;
+    }
+
+    .preco{
+        font-size: 1.5rem;
+    }
+
+
+    .plataforma{
+        margin-block: 10px 15px;
+    }
+
+    .detalhes{
+        font-size: .8rem;
+        margin-block: 10px 15px;
+    }
+
+    .botao_comprar{
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin: 0px 5px;
+    }
+
+    .botao_adicionar p{
+        width: max-content;        
+    }
+}
