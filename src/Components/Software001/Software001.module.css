@@ -88,10 +88,6 @@
 }
 
 @media screen and (max-width: 1280px) {
-    /* .home {
-        padding-top: 20px;
-    } */
-
     .home h1{
         font-size: 1.5rem;
     }
@@ -137,7 +133,6 @@
 
     .img_software{
         width: 200px;
-        height: 200px;
     }
 
     .img_software img{
@@ -184,8 +179,6 @@
     .text{
         height: 150px;
          width: 95%;
-         font-size: .9rem;
-         text-align: center;
          display: flex;
          justify-content: space-around;
          align-items: center;
@@ -208,9 +201,6 @@
     }
 
     .container{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         height: 350px;
     }
 
@@ -222,7 +212,6 @@
 
     .img_software img{
         height: 250px;
-        border-radius: 20px;
     }
 
     .text{
@@ -230,9 +219,6 @@
          width: 95%;
          font-size: .8rem;
          text-align: center;
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
          line-height: 20px;
     }
 }

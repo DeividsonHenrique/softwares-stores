@@ -1,8 +1,7 @@
-import styles from "./PrincipalCard.module.css";
+import styles from "../Card/Card.module.css";
 import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import windowsImg from "/images/icons/windows.png";
 import macImg from "/images/icons/macos.png";
 import linuxImg from "/images/icons/linux.png";

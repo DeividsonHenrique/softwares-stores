@@ -1,6 +1,6 @@
 .card {
     background-color: #333;
-    height: 360px;
+    height: 350px;
     width: 200px;
     position: relative;
     border-radius: 10px;
@@ -46,13 +46,6 @@
         font-weight: 300;
         color: aqua;
     }
-}
-
-.ano {
-    text-align: center;
-    color: #fff;
-    font-size: .8em;
-    font-weight: 400;
 }
 
 .plataforma {
@@ -101,7 +94,7 @@
     font-weight: 500;
     transition: .3s all;
     position: absolute;
-    bottom: 8px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
@@ -114,11 +107,9 @@
 }
 
 
-
-
 @media screen and (max-width: 1280px){
     .card{
-        height: 275px;
+        height: 270px;
         width: 140px;
     }
 
@@ -167,7 +158,7 @@
 
 @media screen and (max-width: 992px){
     .card{
-        height: 270px;
+        height: 260px;
         width: 140px;
     }
 
@@ -180,8 +171,7 @@
     }
 
     .card h5{
-        font-size: .8rem;
-        margin-bottom: -5px;
+        padding-block: .4rem;
     }
 
     .plataforma{

@@ -72,10 +72,6 @@
 }
 
 @media screen and (max-width: 992px){
-    .secao_produtos {
-        width: 100%;
-    }
-
     .secao_produtos h3{
         font-size: 1rem;
     }
@@ -86,9 +82,6 @@
 
     .procurar{
         width: 250px;
-        font-size: .9rem;
-        height: 25px;
-        border-radius: 10px;
     }
 }
 
@@ -101,16 +94,10 @@
     .secao_produtos h3{
         font-size: 1rem;
     }
-    
-    .resultado{
-        font-size: .8rem;
-    }
 
     .procurar{
         width: 200px;
         font-size: .7rem;
-        height: 25px;
-        border-radius: 10px;
     }
 }
 
