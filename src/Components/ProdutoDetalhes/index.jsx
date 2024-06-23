@@ -10,6 +10,7 @@ import Quantidade from "../Quantidade";
 import { Fade, Zoom as RevealZoom } from "react-awesome-reveal";
 import Zoom from 'react-medium-image-zoom'
 import ImageMagnifier from "../ImageMagnifier";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 // Imagens locais
@@ -61,6 +62,7 @@ function ProdutoDetalhes() {
         <div className={styles.quadro_1}>
           <ImageMagnifier src={produto.imagem} alt={produto.nome} />
         </div>
+        <div className={styles.linha}/>
         <div className={styles.quadro_2}>
           <h1 className={styles.titulo}>{produto.nome}</h1>
           <p className={styles.versao}>{produto.versao}</p>
@@ -103,7 +105,7 @@ function ProdutoDetalhes() {
             >
               Comprar
             </Link>
-            <Link className={` ${styles.botao_comprar} ${styles.botao_adicionar}`}><p>Adicionar ao carrinho</p></Link>
+            <Link  className={styles.botao_adicionar}><FaShoppingCart /></Link>
           </div>
 
           <div className={styles.pagamentos}>
@@ -170,7 +172,7 @@ function ProdutoDetalhes() {
           </ul>
         </div>
         <RevealZoom duration={750}  className={styles.section}>
-          <h3>Imagens exemplo:</h3>
+          <h3 className={styles.tituloImagens}>Imagens exemplo:</h3>
         <section className={styles.imagem}>
           
             <Zoom>

@@ -91,10 +91,11 @@
 
 .quadro_3 {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: start;
     align-items: center;
+    
 }
 
 
@@ -105,12 +106,24 @@
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 1.2rem;
-    margin: 0px 10px;
+    margin: 0px 5px;
     transition: .3s ease-in-out;
 }
 
-.botao_comprar:hover {
+.botao_comprar:hover, .botao_adicionar:hover {
     background-color: darkgreen;
+}
+
+.botao_adicionar{
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
 }
 
 
@@ -295,6 +308,8 @@ section.imagem {
 
 
 
+
+
 @media screen and (max-width: 1366px){
     .quadro_1{
         width: 350px;
@@ -334,7 +349,489 @@ section.imagem {
         margin: 0px 5px;
     }
 
-    .botao_adicionar p{
-        width: max-content;        
+    .botao_adicionar{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 992px){
+    .detalhes{
+        width: 90%;
+        margin-block: 10px 15px;
+    }
+
+    .quadro_1{
+        width: 300px;
+        height: 300px;
+        margin-right: 20px;
+    }
+
+    .quadro_2{
+        width: 50%;
+    }
+
+    
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .versao{
+        font-size: .8rem;
+    }
+
+    .preco{
+        font-size: 1.5rem;
+    }
+
+
+    .plataforma{
+        margin-block: 10px 15px;
+    }
+
+    .botao_comprar{
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin: 0px 5px;
+    }
+
+    .frete img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .bandeiras img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px){
+    .detalhes{
+        width: 90%;
+    }
+
+    .quadro_1{
+        width: 250px;
+        height: 250px;
+        margin-right: 20px;
+    }
+
+    .quadro_2{
+        width: 50%;
+    }
+
+    
+    .titulo{
+        font-size: 1rem;
+    }
+
+    .versao{
+        font-size: .5rem;
+    }
+
+    .preco{
+        font-size: 1rem;
+        margin-block: 5px 0px;
+    }
+
+
+    .plataforma{
+        margin-block: 5px 5px;
+    }
+
+    .plataforma img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .botao_comprar{
+        font-size: .8rem;
+        padding: 8px 10px;
+        margin: 0px 5px;
+    }
+
+    .botao_adicionar{
+        padding: 9px 15px;
+        font-size: .8rem;
+    }
+
+    .descricao{
+        font-size: .7rem;
+    }
+
+    .frete img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .bandeiras img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .pagamentos{
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 992px){
+    .detalhes{
+        width: 95%;
+        margin-block: 10px 15px;
+    }
+
+    .quadro_1{
+        width: 250px;
+        height: 250px;
+        margin-right: 20px;
+    }
+
+    .quadro_2{
+        width: 50%;
+    }
+
+    
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .versao{
+        font-size: .8rem;
+    }
+
+    .preco{
+        font-size: 1.5rem;
+    }
+
+
+    .plataforma{
+        margin-block: 10px 15px;
+    }
+
+    .botao_comprar{
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin: 0px 5px;
+    }
+
+    .frete img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .bandeiras img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .titulo_geral{
+        font-size: 1rem;
+    }
+
+    .descricao{
+        font-size: .7rem;
+    }
+
+    .carateristicas{
+        width: 120%;
+    }
+
+    .carateristicas ul li{
+        font-size: .8rem;
+    }
+
+
+    .tituloImagens, .carateristicas h3{
+        text-align: center;
+        font-size: .8rem;
+    }
+
+
+    .imagem img{
+        margin: 5px 0px;
+    }
+
+    .botao_adicionar{
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 540px){
+    .detalhes{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .quadro_1{
+        width: 250px;
+        height: 250px;
+    }
+
+    .quadro_2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quadro_3{
+        justify-content: center;
+    }
+
+    .linha{
+        width: 100%;
+        height: 1px;
+        background:linear-gradient(90deg, transparent, #fff, transparent);
+        margin: 10px 0px;
+    }
+    
+    .titulo{
+        font-size: 1rem;
+    }
+
+    .versao{
+        font-size: .5rem;
+        margin-block: 5px 0px;
+    }
+
+    .preco{
+        font-size: 1rem;
+        
+    }
+
+
+    .plataforma{
+        margin-block: 5px 5px;
+    }
+
+    .plataforma img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .botao_comprar{
+        font-size: .8rem;
+        padding: 8px 10px;
+        margin: 0px 5px;
+    }
+
+    .botao_adicionar{
+        padding: 9px 15px;
+        font-size: .8rem;
+    }
+
+    .descricao{
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    .frete img{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .bandeiras img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .pagamentos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pagamentos ul li{
+        display: inline;
+    }
+
+    .pagamentos ul li:first-child{
+        margin-right: 10px;
+    }
+
+
+
+    .titulo_geral{
+        font-size: 1rem;
+    }
+
+    .descricao{
+        font-size: .7rem;
+    }
+
+    .carateristicas{
+        width: 120%;
+    }
+
+    .carateristicas ul li{
+        font-size: .8rem;
+    }
+
+
+    .tituloImagens, .carateristicas h3{
+        text-align: center;
+        font-size: .8rem;
+    }
+
+
+    .imagem img{
+        margin: 5px 0px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 400px){
+    .detalhes{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .quadro_1{
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+    }
+
+    .quadro_2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .quadro_3{
+        justify-content: center;
+        height: 50px;
+    }
+
+    .linha{
+        width: 100%;
+        height: 1px;
+        background:linear-gradient(90deg, transparent, gray, transparent);
+        margin: 10px 0px;
+    }
+    
+    .titulo{
+        font-size: 1rem;
+    }
+
+    .versao{
+        font-size: .5rem;
+        margin-block: 5px 0px;
+    }
+
+    .preco{
+        font-size: .8rem;
+        
+    }
+
+
+    .plataforma{
+        margin-block: 5px 5px;
+    }
+
+    .plataforma img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .botao_comprar{
+        font-size: .8rem;
+        padding: 8px 10px;
+        margin: 0px 5px;
+    }
+
+    .botao_adicionar{
+        padding: 9px 15px;
+        font-size: .8rem;
+    }
+
+    .descricao{
+        font-size: .7rem;
+        text-align: center;
+        margin-block: 10px;
+    }
+
+
+    .frete img{
+        width: 30px;
+        height: 30px;
+        margin-left: -30px;
+    }
+
+
+    .bandeiras img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .pagamentos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: .6rem;
+    }
+
+    .pagamentos h3{
+        margin-bottom: 5px;
+    }
+
+    .pagamentos ul li{
+        display: inline;
+    }
+
+    .pagamentos ul li:first-child{
+        margin-right: 10px;
+    }
+
+    .titulo_geral{
+        font-size: 1rem;
+    }
+
+    .descricao{
+        font-size: .7rem;
+    }
+
+    .carateristicas{
+        width: 120%;
+    }
+
+    .carateristicas ul li{
+        font-size: .8rem;
+    }
+
+
+    .tituloImagens, .carateristicas h3{
+        text-align: center;
+        font-size: .8rem;
+    }
+
+
+    .imagem img{
+        margin: 5px 0px;
     }
 }
