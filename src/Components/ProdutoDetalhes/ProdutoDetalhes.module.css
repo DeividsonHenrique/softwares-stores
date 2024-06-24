@@ -362,13 +362,10 @@ section.imagem {
 
 }
 
-
-
 @media screen and (max-width: 992px) {
     .detalhes {
         width: 95%;
         margin-block: 10px 15px;
-        padding-top: 50px;
     }
 
     .quadro_1 {
