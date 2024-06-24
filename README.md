@@ -1,17 +1,17 @@
 <h1 align="center"> Softwares Store </h1>
 
-<p align="center">Estou desenvolvendo esse projeto com base em varios sites onde seria usado para vendas de softwares e progrmas para varias plataformas</p>
+<p align="center">Estou desenvolvendo esse projeto com base em varios sites onde seria usado para vendas de softwares e progrmas para varias plataformas.</p>
 
-<h3>Alguns Detalhes sobre o projeto</h3>
+<h3>Alguns Detalhes sobre o projeto.</h3>
 
 <ul>
-    <li>O Pojeto não esta finalizado</li>
+    <li>O Projeto não esta finalizado.</li>
     <li>Desenvolvendo em React Js Vite.</li>
-    <li>Usando rotas alternadas "Routes" para links entre páginas</li>
-    <li>Manipulação JSON com informações de produtos contida nele</li>
-    <li>Responsividade</li>
-    <li>Usando Hooks e replicando cards de produtos</li>
-    <li>Criando o projeto do zero, sem exeplos, apenas ideias</li>
+    <li>Usando rotas alternadas "Routes" para links e páginas.</li>
+    <li>Manipulação JSON com informações de produtos.</li>
+    <li>Responsividade.</li>
+    <li>Usando Hooks e replicando cards de produtos.</li>
+    <li>Criando o projeto do zero sem um design pronto, apenas ideias e outros sites como ideias</li>
 </ul>
 
 
