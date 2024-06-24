@@ -9,7 +9,6 @@ import Footer from "../Footer";
 import Quantidade from "../Quantidade";
 import { Fade, Zoom as RevealZoom } from "react-awesome-reveal";
 import Zoom from 'react-medium-image-zoom'
-import ImageMagnifier from "../ImageMagnifier";
 import { FaShoppingCart } from "react-icons/fa";
 
 
@@ -60,7 +59,9 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
       <div key={produto.id} className={styles.detalhes}>
         <div className={styles.quadro_1}>
-          <ImageMagnifier src={produto.imagem} alt={produto.nome} />
+          <Zoom>
+          <img src={produto.imagem}  alt={produto.nome} />
+          </Zoom>
         </div>
         <div className={styles.linha}/>
         <div className={styles.quadro_2}>

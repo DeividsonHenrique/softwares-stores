@@ -20,7 +20,13 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #181818;
-    border: 5px solid salmon;
+    border: 1px solid salmon;
+}
+
+.quadro_1 img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 
@@ -362,6 +368,7 @@ section.imagem {
     .detalhes {
         width: 95%;
         margin-block: 10px 15px;
+        padding-top: 50px;
     }
 
     .quadro_1 {

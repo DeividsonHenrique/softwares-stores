@@ -50,7 +50,20 @@ strong {
     position: relative;
     border-radius: 10px;
     user-select: none;
-    
+
+}
+
+.teste {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 0px;
+    overflow: hidden;
 }
 
 .teste::after {
@@ -78,20 +91,6 @@ strong {
 }
 
 
-.teste {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 10px 0px;
-    overflow: hidden;
-}
-
-
 @media screen and (max-width: 1280px) {
     .store h3 {
         font-size: 1.2rem;
@@ -111,8 +110,8 @@ strong {
     }
 
     .store ul li {
-        font-size: .8rem;
         margin-bottom: 5px;
+        font-size: .7rem
     }
 
     strong {
@@ -121,39 +120,28 @@ strong {
 }
 
 
-@media screen and (max-width: 768px) {
-    .store ul li {
-        font-size: .7rem;
-        margin-bottom: 5px;
-    }
-}
-
-@media screen and (min-width:390px) and (max-width: 478px){
-    .store h3{
+@media screen and (min-width:390px) and (max-width: 478px) {
+    .store h3 {
         font-size: .9rem;
     }
 
-    .store ul li{
-        font-size: .7rem;
-    }
-
-    strong{
+    strong {
         font-size: .6rem;
     }
 }
 
 
-@media screen and (max-width:389.9px){
-    .store ul li{
+@media screen and (max-width:389.9px) {
+    .store ul li {
         font-size: .65rem;
     }
 
-    .carousel img{
+    .carousel img {
         width: 98%;
         border-radius: 5px;
     }
 
-    .teste{
+    .teste {
         width: 100%;
     }
 }

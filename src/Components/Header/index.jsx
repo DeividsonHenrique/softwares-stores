@@ -24,6 +24,7 @@ function Header() {
       color: isActive ? "white" : "black",
       padding: padding,
       borderRadius: "20px",
+      margin: "0px 2px",
       background: isActive ? "#333" : "#F5F5F5",
       fontWeight: "bold",
       transition: "all 0.3s ease",
