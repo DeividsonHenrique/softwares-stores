@@ -2,15 +2,20 @@
 
 <p align="center">Estou desenvolvendo esse projeto com base em varios sites onde seria usado para vendas de softwares e progrmas para varias plataformas.</p>
 
+<a href="https://softwares-stores.vercel.app/">Clique aqui para acessar o site</a>
+
 <h3>Alguns Detalhes sobre o projeto.</h3>
 
 <ul>
     <li>O Projeto não esta finalizado.</li>
+    <li>Filtar por empresa.</li>
+    <li>Mostrar todos os produtos.</li>
+    <li>Buscar produtos com pesquisa.</li>
     <li>Desenvolvendo em React Js Vite.</li>
     <li>Usando rotas alternadas "Routes" para links e páginas.</li>
     <li>Manipulação JSON com informações de produtos.</li>
     <li>Responsividade.</li>
-    <li>Usando Hooks e replicando cards de produtos.</li>
+    <li>Usando Hooks e PROPS para replicando os cards.</li>
     <li>Criando o projeto do zero sem um design pronto, apenas ideias e outros sites como ideias</li>
 </ul>
 
