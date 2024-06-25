@@ -2,7 +2,7 @@
 
 <p align="center">Estou desenvolvendo esse projeto com base em varios sites onde seria usado para vendas de softwares e progrmas para varias plataformas.</p>
 
-<a href="https://softwares-stores.vercel.app/">Clique aqui para acessar o site</a>
+<a href="https://softwares-stores.vercel.app/" target="_blank">Clique aqui para acessar o site</a>
 
 <h3>Alguns Detalhes sobre o projeto.</h3>
 
