@@ -7,7 +7,7 @@ function Carrinho() {
       <Header />
       <div className={styles.container}>
         <h2>Shopping Cart</h2>
-        <span>Em Construção...</span>
+        <span>Em Construção....</span>
       </div>
     </>
   );
