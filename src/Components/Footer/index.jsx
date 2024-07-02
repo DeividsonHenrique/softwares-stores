@@ -1,6 +1,3 @@
-import styles from "./Footer.module.css";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin, FaInstagram, FaFacebookSquare } from "react-icons/fa";
 import {
   FooterSection,
   Container,
@@ -11,19 +8,23 @@ import {
   StyledLinkCol2,
   StyledLinkCol3,
   Maps,
+  InstagramIcon,
+  LinkedinIcon,
+  FacebookIcon,
+  TwitterIcon,
 } from "./styles";
 
 function Footer() {
   return (
-    <FooterSection className={styles.footer}>
-      <Container className={styles.container}>
-        <Col1 className={styles.col1}>
+    <FooterSection>
+      <Container>
+        <Col1>
           <h2>Software Store</h2>
           <p>Criando Possibilidades</p>
           <p>Para conectar com o mundo!</p>
         </Col1>
 
-        <Col2 className={styles.col2}>
+        <Col2>
           <h3>Explorar</h3>
 
           <StyledLinkCol2 to="/">
@@ -37,46 +38,30 @@ function Footer() {
           </StyledLinkCol2>
         </Col2>
 
-        <Col3 className={styles.col3}>
+        <Col3>
           <h3>Follow</h3>
 
-          <StyledLinkCol3
-            className={styles.link}
-            to="https://www.instagram.com/"
-            target="_blank"
-          >
+          <StyledLinkCol3 to="https://www.instagram.com/" target="_blank">
             <p>
-              <FaInstagram className={styles.icon} /> Instagram
+              <InstagramIcon /> Instagram
             </p>
           </StyledLinkCol3>
 
-          <StyledLinkCol3
-            className={styles.link}
-            to="https://twitter.com/"
-            target="_blank"
-          >
+          <StyledLinkCol3 to="https://twitter.com/" target="_blank">
             <p>
-              <FaXTwitter className={styles.icon} /> Twitter
+              <TwitterIcon /> Twitter
             </p>
           </StyledLinkCol3>
 
-          <StyledLinkCol3
-            className={styles.link}
-            to="https://www.facebook.com/"
-            target="_blank"
-          >
+          <StyledLinkCol3 to="https://www.facebook.com/" target="_blank">
             <p>
-              <FaFacebookSquare className={styles.icon} /> Facebook
+              <FacebookIcon /> Facebook
             </p>
           </StyledLinkCol3>
 
-          <StyledLinkCol3
-            className={styles.link}
-            to="https://www.linkedin.com/"
-            target="_blank"
-          >
+          <StyledLinkCol3 to="https://www.linkedin.com/" target="_blank">
             <p>
-              <FaLinkedin className={styles.icon} /> Linkedin
+              <LinkedinIcon /> Linkedin
             </p>
           </StyledLinkCol3>
         </Col3>

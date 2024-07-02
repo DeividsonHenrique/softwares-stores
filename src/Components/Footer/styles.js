@@ -1,5 +1,27 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
+import { FaLinkedin, FaInstagram, FaFacebookSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+const styledIcon = css`
+  padding-right: 5px;
+`;
+
+export const InstagramIcon = styled(FaInstagram)`
+  ${styledIcon}
+`;
+
+export const LinkedinIcon = styled(FaLinkedin)`
+  ${styledIcon}
+`;
+
+export const FacebookIcon = styled(FaFacebookSquare)`
+  ${styledIcon}
+`;
+
+export const TwitterIcon = styled(FaXTwitter)`
+  ${styledIcon}
+`;
 
 const FlexColumn = css`
   display: flex;

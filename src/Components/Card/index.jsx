@@ -1,14 +1,11 @@
 /* eslint-disable react/prop-types */
-import styles from "./Card.module.css";
 import { FaStar } from "react-icons/fa";
-import { Link } from "react-router-dom";
-
 import windowsImg from "/images/icons/windows.png";
 import macImg from "/images/icons/macos.png";
 import linuxImg from "/images/icons/linux.png";
 import androidImg from "/images/icons/android.png";
 import iosImg from "/images/icons/ios.png";
-import {CardContainer, CardImage, CardTitle, Plataform, Price, Assess} from "./styles"
+import {CardContainer, CardImage, CardTitle, Plataform, Price, Assess, StyledButton} from "./styles"
 
 const imagensSistemaOperacional = {
   "windows.png": windowsImg,
@@ -20,8 +17,8 @@ const imagensSistemaOperacional = {
 
 function Card({ produto }) {
   return (
-    <CardContainer className={styles.card} key={produto.id}>
-      <CardImage className={styles.imagem}>
+    <CardContainer key={produto.id}>
+      <CardImage>
         <img src={produto.imagem} alt={produto.nome} />
       </CardImage>
 
@@ -29,7 +26,7 @@ function Card({ produto }) {
         {produto.nome} <p>{produto.versao}</p>
       </CardTitle>
 
-      <Plataform className={styles.plataforma}>
+      <Plataform>
         {produto.sistema_operacional.map((imgName, index) => (
           <img
             key={index}
@@ -39,19 +36,18 @@ function Card({ produto }) {
         ))}
       </Plataform>
 
-      <Price className={styles.preco}>{produto.preco}</Price>
+      <Price>{produto.preco}</Price>
 
-      <Assess className={styles.avaliacao}>
+      <Assess>
         <FaStar />
         {produto.avaliacao}
       </Assess>
 
-      <Link
+      <StyledButton
         to={`/produtos/${produto.id} ${produto.nome}`}
-        className={styles.btn}
       >
         Comprar
-      </Link>
+      </StyledButton>
     </CardContainer>
   );
 }
