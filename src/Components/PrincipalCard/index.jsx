@@ -7,6 +7,7 @@ import macImg from "/images/icons/macos.png";
 import linuxImg from "/images/icons/linux.png";
 import androidImg from "/images/icons/android.png";
 import iosImg from "/images/icons/ios.png";
+import {CardContainer, CardImage, CardTitle, Plataform, Price, Assess} from "../Card/styles"
 
 const imagensSistemaOperacional = {
   "windows.png": windowsImg,
@@ -31,32 +32,32 @@ function PrincipalCard() {
 
   return produtos.map((produto) => (
     <> 
-    <div className={styles.card} key={produto.id}>
+    <CardContainer className={styles.card} key={produto.id}>
       
-      <div className={styles.imagem}><img src={produto.imagem} alt={produto.nome} /></div>
+      <CardImage className={styles.imagem}><img src={produto.imagem} alt={produto.nome} /></CardImage>
 
-      <h5>
+      <CardTitle>
         {produto.nome} <p>{produto.versao}</p>{" "}
-      </h5>
+      </CardTitle>
 
-      <div className={styles.plataforma}>
+      <Plataform className={styles.plataforma}>
             {produto.sistema_operacional.map((imgName, index) => (
               <img key={index} src={imagensSistemaOperacional[imgName]} alt={`${produto.nome} - ${index}`} />
             ))}
-          </div>
+          </Plataform>
 
-      <p className={styles.preco}>{produto.preco}</p>
+      <Price className={styles.preco}>{produto.preco}</Price>
 
-      <p className={styles.avaliacao}>
+      <Assess className={styles.avaliacao}>
         <FaStar />
         {produto.avaliacao}
-      </p>
+      </Assess>
 
       <Link to={`/produtos/${produto.id} ${produto.nome}`} className={styles.btn}>
         Comprar
       </Link>
       
-    </div>
+    </CardContainer>
     </>
   ));
 }
