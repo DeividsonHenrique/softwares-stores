@@ -36,9 +36,9 @@ function TodosProdutos() {
     palavraAchada = "Produtos";
   }
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
