@@ -5,22 +5,30 @@ import macImg from "/images/icons/macos.png";
 import linuxImg from "/images/icons/linux.png";
 import androidImg from "/images/icons/android.png";
 import iosImg from "/images/icons/ios.png";
-import {CardContainer, CardImage, CardTitle, Plataform, Price, Assess, StyledButton} from "../Card/styles"
+import {
+  CardContainer,
+  CardImage,
+  CardTitle,
+  Plataform,
+  Price,
+  Assess,
+  StyledButton,
+} from "../Card/styles";
 
 const imagensSistemaOperacional = {
   "windows.png": windowsImg,
   "macos.png": macImg,
-  "linux.png": linuxImg, 
+  "linux.png": linuxImg,
   "android.png": androidImg,
-  "ios.png": iosImg
-}
+  "ios.png": iosImg,
+};
 
 function PrincipalCard() {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
     const buscarProdutos = async () => {
-      const response = await fetch('/data/PrincipaisProdutos.json');
+      const response = await fetch("/data/PrincipaisProdutos.json");
       const data = await response.json();
       setProdutos(data);
     };
@@ -29,33 +37,37 @@ function PrincipalCard() {
   }, []);
 
   return produtos.map((produto) => (
-    <> 
-    <CardContainer key={produto.id}>
-      
-      <CardImage ><img src={produto.imagem} alt={produto.nome} /></CardImage>
+    <>
+      <CardContainer key={produto.id}>
+        <CardImage>
+          <img src={produto.imagem} alt={produto.nome} />
+        </CardImage>
 
-      <CardTitle>
-        {produto.nome} <p>{produto.versao}</p>{" "}
-      </CardTitle>
+        <CardTitle>
+          {produto.nome} <p>{produto.versao}</p>{" "}
+        </CardTitle>
 
-      <Plataform >
-            {produto.sistema_operacional.map((imgName, index) => (
-              <img key={index} src={imagensSistemaOperacional[imgName]} alt={`${produto.nome} - ${index}`} />
-            ))}
-          </Plataform>
+        <Plataform>
+          {produto.sistema_operacional.map((imgName, index) => (
+            <img
+              key={index}
+              src={imagensSistemaOperacional[imgName]}
+              alt={`${produto.nome} - ${index}`}
+            />
+          ))}
+        </Plataform>
 
-      <Price>{produto.preco}</Price>
+        <Price>{produto.preco}</Price>
 
-      <Assess>
-        <FaStar />
-        {produto.avaliacao}
-      </Assess>
+        <Assess>
+          <FaStar />
+          {produto.avaliacao}
+        </Assess>
 
-      <StyledButton to={`/produtos/${produto.id} ${produto.nome}`}>
-        Comprar
-      </StyledButton>
-      
-    </CardContainer>
+        <StyledButton to={`/produtos/${produto.id} ${produto.nome}`}>
+          Comprar
+        </StyledButton>
+      </CardContainer>
     </>
   ));
 }

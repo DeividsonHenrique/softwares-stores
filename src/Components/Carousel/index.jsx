@@ -3,10 +3,9 @@ import Slider from "react-slick";
 import { Zoom } from "react-awesome-reveal";
 import styled from "styled-components";
 
-
 const Container = styled.div`
   width: 100%;
-`
+`;
 
 function ImageCarousel({ children }) {
   const settings = {

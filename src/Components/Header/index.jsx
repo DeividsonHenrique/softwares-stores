@@ -1,8 +1,21 @@
-import styles from "./Header.module.css";
 import { NavLink, Link } from "react-router-dom";
-import { FaShoppingCart, FaBars  } from "react-icons/fa";
 import { useState } from "react";
-import { IoClose } from "react-icons/io5";
+import {
+  HeaderDesktop,
+  Logo,
+  Nav,
+  NavUlDesktop,
+  NavLi,
+  Cart,
+  CartButton,
+  MobileCart,
+  MobileMenu,
+  MobileNav,
+  NavMobile,
+  CloseBtn,
+  NavUl,
+  MobileLink,
+} from "./styles";
 
 function Header() {
   const navLink = ({ isActive }) => {
@@ -31,7 +44,6 @@ function Header() {
     };
   };
 
-
   const [isNavVisible, setIsNavVisible] = useState(false);
 
   const toggleNav = () => {
@@ -40,51 +52,47 @@ function Header() {
 
   return (
     <>
-      <section className={styles.header}>
-        <NavLink to="/" className={styles.link}>
-          <h2>Software Store</h2>
-        </NavLink>
-        <nav>
-          <ul>
+      <HeaderDesktop>
+        <Logo to="/">Software Store</Logo>
+        <Nav>
+          <NavUlDesktop>
             <NavLink style={navLink} exact to="/">
-              <li className={styles.lista}>Início</li>
+              <NavLi>Início</NavLi>
             </NavLink>
 
             <NavLink style={navLink} to="/todos_produtos">
-              <li className={styles.lista}>Produtos</li>
+              <NavLi>Produtos</NavLi>
             </NavLink>
 
             <NavLink style={navLink} to="/contato">
-              <li className={styles.lista}>Contato</li>
+              <NavLi>Contato</NavLi>
             </NavLink>
-          </ul>
+          </NavUlDesktop>
           <Link to="/carrinho">
-            <button className={styles.carrinho}><FaShoppingCart /> Carrinho</button>
-            <FaShoppingCart className={styles.iconCart} />
+            <Cart>
+              <CartButton /> Carrinho
+            </Cart>
+            <MobileCart />
           </Link>
-        </nav>
-      </section>
+        </Nav>
+      </HeaderDesktop>
 
-      <FaBars className={styles.iconBars} onClick={toggleNav} />
-      <div className={`${styles.nav_header} ${isNavVisible ? styles.visible : ""} `} onClick={toggleNav}>
-      <IoClose className={styles.iconClose} onClick={toggleNav} />
-        <nav>
-          <ul>
-            <NavLink className={styles.navLink} exact to="/">
+      <MobileMenu onClick={toggleNav} />
+
+      <MobileNav isNavVisible={isNavVisible} onClick={toggleNav}>
+        <CloseBtn onClick={toggleNav} />
+        <NavMobile>
+          <NavUl>
+            <MobileLink exact to="/">
               Início
-            </NavLink>
+            </MobileLink>
 
-            <NavLink className={styles.navLink} to="/todos_produtos">
-              Produtos
-            </NavLink>
+            <MobileLink to="/todos_produtos">Produtos</MobileLink>
 
-            <NavLink className={styles.navLink} to="/contato">
-              Contato
-            </NavLink>
-          </ul>
-          
-        </nav>
-      </div>
+            <MobileLink to="/contato">Contato</MobileLink>
+          </NavUl>
+        </NavMobile>
+      </MobileNav>
     </>
   );
 }

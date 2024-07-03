@@ -1,12 +1,20 @@
-import styles from "./Software003.module.css";
 import Carousel from "../Carousel";
 import { Fade } from "react-awesome-reveal";
-import { Store, Title, StoreUl, StoreLi, Strong, Carousels, CarouselImg, Rolling } from "./styles"
+import {
+  Store,
+  Title,
+  StoreUl,
+  StoreLi,
+  Strong,
+  Carousels,
+  CarouselImg,
+  Rolling,
+} from "./styles";
 
 function Software003() {
   return (
     <>
-      <Store className={styles.store}>
+      <Store>
         <Fade>
           <Title>Por que escolher a Softwares Shop?</Title>
         </Fade>
@@ -34,37 +42,35 @@ function Software003() {
             </StoreLi>
           </Fade>
         </StoreUl>
-        <Rolling className={styles.teste} delay={400}>
-          
-            <Carousel>
-              <Carousels className={styles.carousel}>
-                <CarouselImg
-                  src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                />
-              </Carousels>
-              <Carousels className={styles.carousel}>
-                <CarouselImg
-                  src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                />
-              </Carousels>
+        <Rolling delay={400}>
+          <Carousel>
+            <Carousels>
+              <CarouselImg
+                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </Carousels>
+            <Carousels>
+              <CarouselImg
+                src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </Carousels>
 
-              <Carousels className={styles.carousel}>
-                <CarouselImg
-                  src="https://images.pexels.com/photos/7610531/pexels-photo-7610531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                />
-              </Carousels>
+            <Carousels>
+              <CarouselImg
+                src="https://images.pexels.com/photos/7610531/pexels-photo-7610531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </Carousels>
 
-              <Carousels className={styles.carousel}>
-                <CarouselImg
-                  src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                />
-              </Carousels>
-            </Carousel>
-          
+            <Carousels>
+              <CarouselImg
+                src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </Carousels>
+          </Carousel>
         </Rolling>
       </Store>
     </>

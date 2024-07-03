@@ -1,7 +1,5 @@
-
 import { useState, useRef } from "react";
-import {MagnifierContainer, Image, Lens, ZoomedImage} from './styles'
-
+import { MagnifierContainer, Image, Lens, ZoomedImage } from "./styles";
 
 // eslint-disable-next-line react/prop-types
 function ImageMagnifier({ src }) {
@@ -48,5 +46,4 @@ function ImageMagnifier({ src }) {
   );
 }
 
-
-export default ImageMagnifier
+export default ImageMagnifier;

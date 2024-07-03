@@ -13,8 +13,8 @@ function Container() {
   }, []);
   return (
     <>
-    <Secao_produtos />
-      <Software001 />     
+      <Secao_produtos />
+      <Software001 />
       <Software002 />
       <Software003 />
       <Fade duration={1000}>

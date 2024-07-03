@@ -1,9 +1,9 @@
-import styles from "./TodosProdutos.module.css";
 import Card from "../../Components/Card";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
+import { SectionProducts, Title, Search, Results, Products } from "./styles";
 
 function TodosProdutos() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -43,26 +43,25 @@ function TodosProdutos() {
   return (
     <>
       <Header />
-      <div className={styles.secao_produtos}>
+      <SectionProducts>
         <Fade cascade delay={100} duration={500} direction="up">
-          <h3>todos os Produtos e softwares</h3>
-          <input
+          <Title>todos os Produtos e softwares</Title>
+          <Search
             type="text"
             placeholder="Pesquisar Produto..."
             value={searchTerm}
             onChange={handleSearch}
-            className={styles.procurar}
           />
 
           {filteredProdutos.length > 0 ? (
-            <p className={styles.resultado}>
+            <Results>
               {`${filteredProdutos.length} ${palavraAchada}`}
-            </p>
+            </Results>
           ) : (
-            <p className={styles.resultado}></p>
+            <Results></Results>
           )}
         </Fade>
-        <div className={styles.produtos}>
+        <Products>
           <Fade
             cascade
             damping={0.2}
@@ -76,13 +75,13 @@ function TodosProdutos() {
                 <Card key={produto.id} produto={produto} />
               ))
             ) : (
-              <p className={styles.resultado}>Nenhum resultado encontrado</p>
+              <p>Nenhum resultado encontrado</p>
             )}
           </Fade>
-        </div>
-      </div>
+        </Products>
+      </SectionProducts>
       <Fade>
-        <Footer className={styles.footer} />
+        <Footer />
       </Fade>
     </>
   );

@@ -1,15 +1,14 @@
-import styles from "./Software002.module.css";
 import { Zoom, Fade } from "react-awesome-reveal";
 import { Container, Title, Card, CardOl, CardLi, CardImg } from "./styles";
 
 function Software002() {
   return (
     <>
-      <Container className={styles.container}>
+      <Container>
         <Fade duration={1000}>
           <Title>O que você encontrará aqui:</Title>
         </Fade>
-        <Card className={styles.mais}>
+        <Card>
           <CardOl>
             <Fade direction="up" duration={300} cascade delay={200}>
               <CardLi>
@@ -41,9 +40,7 @@ function Software002() {
             </Fade>
           </CardOl>
           <Zoom delay={200} duration={500}>
-            <CardImg
-              src="/images/container/engineer.svg" alt="Engineer"
-            />
+            <CardImg src="/images/container/engineer.svg" alt="Engineer" />
           </Zoom>
         </Card>
       </Container>

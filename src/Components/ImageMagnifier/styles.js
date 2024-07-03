@@ -22,7 +22,7 @@ export const Lens = styled.div`
   width: 800px;
   height: 800px;
   background: rgba(255, 255, 255, 0.4);
-  display: ${({ show }) => (show ? 'block' : 'none')};
+  display: ${({ show }) => (show ? "block" : "none")};
   cursor: none;
   overflow: hidden;
   z-index: 1;
