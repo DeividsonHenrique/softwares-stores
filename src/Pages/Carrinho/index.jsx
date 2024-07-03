@@ -1,14 +1,14 @@
 import Header from "../../Components/Header";
-import styles from "./Carrinho.module.css";
+import { Container } from "./atyles";
 
 function Carrinho() {
   return (
     <>
       <Header />
-      <div className={styles.container}>
+      <Container>
         <h2>Shopping Cart</h2>
         <span>Em Construção....</span>
-      </div>
+      </Container>
     </>
   );
 }

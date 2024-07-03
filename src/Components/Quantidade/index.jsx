@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Quantidade.module.css";
+import { Quantity, Button, Value } from "./styles";
 
 function Quantidade() {
     const [quantidade, setQuantidade] = useState(1);
@@ -17,11 +18,11 @@ function Quantidade() {
 
     return(
         <>
-            <div className={styles.quantidade}>
-              <button className={styles.botao_quantidade} onClick={diminuirQuantidade}>-</button>
-              <input type="text" value={quantidade} readOnly />
-              <button className={styles.botao_quantidade} onClick={incluirQuantidade}>+</button>
-            </div>
+            <Quantity className={styles.quantidade}>
+              <Button className={styles.botao_quantidade} onClick={diminuirQuantidade}>-</Button>
+              <Value type="text" value={quantidade} readOnly />
+              <Button className={styles.botao_quantidade} onClick={incluirQuantidade}>+</Button>
+            </Quantity>
 
         </>
     )

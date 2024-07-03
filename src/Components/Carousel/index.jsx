@@ -1,7 +1,12 @@
 /* eslint-disable react/prop-types */
 import Slider from "react-slick";
-import styles from "./Carousel.module.css";
 import { Zoom } from "react-awesome-reveal";
+import styled from "styled-components";
+
+
+const Container = styled.div`
+  width: 100%;
+`
 
 function ImageCarousel({ children }) {
   const settings = {
@@ -17,11 +22,11 @@ function ImageCarousel({ children }) {
   };
 
   return (
-    <div className={styles.container}>
+    <Container>
       <Zoom duration={1000}>
         <Slider {...settings}>{children}</Slider>
       </Zoom>
-    </div>
+    </Container>
   );
 }
 

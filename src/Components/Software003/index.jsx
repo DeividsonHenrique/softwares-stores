@@ -1,71 +1,72 @@
 import styles from "./Software003.module.css";
 import Carousel from "../Carousel";
 import { Fade } from "react-awesome-reveal";
+import { Store, Title, StoreUl, StoreLi, Strong, Carousels, CarouselImg, Rolling } from "./styles"
 
 function Software003() {
   return (
     <>
-      <section className={styles.store}>
+      <Store className={styles.store}>
         <Fade>
-          <h3>Por que escolher a Softwares Shop?</h3>
+          <Title>Por que escolher a Softwares Shop?</Title>
         </Fade>
-        <ul>
+        <StoreUl>
           <Fade direction="down" duration={300} cascade>
-            <li>
-              <strong>Variedade e Qualidade:</strong> Selecionamos apenas os
+            <StoreLi>
+              <Strong>Variedade e Qualidade:</Strong> Selecionamos apenas os
               melhores produtos e softwares para garantir que você tenha acesso
               a soluções de alta qualidade.
-            </li>
-            <li>
-              <strong>Informações Detalhadas:</strong> Cada produto inclui
+            </StoreLi>
+            <StoreLi>
+              <Strong>Informações Detalhadas:</Strong> Cada produto inclui
               descrições detalhadas, avaliações de usuários e especificações
               para ajudá-lo a tomar decisões informadas.
-            </li>
-            <li>
-              <strong>Facilidade de Compra:</strong> Com links diretos para
+            </StoreLi>
+            <StoreLi>
+              <Strong>Facilidade de Compra:</Strong> Com links diretos para
               compra e informações claras sobre compatibilidade, encontrar e
               adquirir o software certo nunca foi tão fácil.
-            </li>
-            <li>
-              <strong>Suporte e Atualizações:</strong> Acompanhe as últimas
+            </StoreLi>
+            <StoreLi>
+              <Strong>Suporte e Atualizações:</Strong> Acompanhe as últimas
               versões e atualizações dos seus softwares preferidos, garantindo
               que você sempre tenha acesso às funcionalidades mais recentes.
-            </li>
+            </StoreLi>
           </Fade>
-        </ul>
-        <Fade className={styles.teste} delay={400}>
+        </StoreUl>
+        <Rolling className={styles.teste} delay={400}>
           
             <Carousel>
-              <div className={styles.carousel}>
-                <img
+              <Carousels className={styles.carousel}>
+                <CarouselImg
                   src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt=""
                 />
-              </div>
-              <div className={styles.carousel}>
-                <img
+              </Carousels>
+              <Carousels className={styles.carousel}>
+                <CarouselImg
                   src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt=""
                 />
-              </div>
+              </Carousels>
 
-              <div className={styles.carousel}>
-                <img
+              <Carousels className={styles.carousel}>
+                <CarouselImg
                   src="https://images.pexels.com/photos/7610531/pexels-photo-7610531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt=""
                 />
-              </div>
+              </Carousels>
 
-              <div className={styles.carousel}>
-                <img
+              <Carousels className={styles.carousel}>
+                <CarouselImg
                   src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt=""
                 />
-              </div>
+              </Carousels>
             </Carousel>
           
-        </Fade>
-      </section>
+        </Rolling>
+      </Store>
     </>
   );
 }
