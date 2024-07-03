@@ -1,28 +1,28 @@
 import styles from "./Software001.module.css";
 import Header from "../Header";
 import { Fade, Zoom } from "react-awesome-reveal";
-
+import {Home1, Title, Container, Image, Text} from "./styles"
 
 function Software001() {
   return (
     <>
       <Header />
-      <section className={`${styles.home} ${styles.page}`}>
+      <Home1 className={`${styles.home} ${styles.page}`}>
         <Zoom duration={750} >
-        <h1>Encontre Todas as Variedades de Produtos/Softwares</h1>
+        <Title>Encontre Todas as Variedades de Produtos/Softwares</Title>
         </Zoom>
-        <div className={styles.container}>
+        <Container className={styles.container}>
         <Fade duration={1000} direction="left" delay={100} >
-          <div className={styles.img_software}>
+          <Image className={styles.img_software}>
           
             <img
               src="/images/container/logo.svg"
               alt="Logo da Softwares Shop"
             />
             
-          </div>
+          </Image>
           </Fade>
-          <span className={styles.text}>
+          <Text className={styles.text}>
           <Fade duration={1000} direction="right" delay={500}>
             Explore a melhor seleção de produtos e softwares disponíveis no
             mercado. Nós oferecemos uma ampla gama de soluções tecnológicas para
@@ -30,10 +30,10 @@ function Software001() {
             nossas categorias e descubra ferramentas essenciais que podem
             transformar a forma como você trabalha e se diverte.
             </Fade>
-          </span>
+          </Text>
           
-        </div>
-      </section>
+        </Container>
+      </Home1>
     </>
   );
 }

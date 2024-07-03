@@ -1,18 +1,18 @@
 import styles from "./Secao_produtos.module.css";
 import PrincipalCard from "../PrincipalCard";
-import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
+import {SectionProducts, Title, Products, Card, StyledButton} from "./styles"
 
 function Secao_produtos() {
   return (
     <>
-      <div className={styles.secao_produtos}>
+      <SectionProducts className={styles.secao_produtos}>
         <Fade duration={1500}>
-          <h3 className={styles.titulo}>Produtos / softwares</h3>
+          <Title className={styles.titulo}>Produtos / softwares</Title>
         </Fade>
 
-        <div className={styles.produtos}>
-          <Fade
+        <Products className={styles.produtos}>
+          <Card
             cascade
             damping={0.1}
             delay={100}
@@ -22,15 +22,15 @@ function Secao_produtos() {
             className={styles.card}
           >
             <PrincipalCard />
-          </Fade>
-        </div>
+          </Card>
+        </Products>
 
         <Fade duration={1500}>
-          <Link to="/todos_produtos" className={styles.ver_todos}>
+          <StyledButton to="/todos_produtos" className={styles.ver_todos}>
             Ver todos os produtos
-          </Link>
+          </StyledButton>
         </Fade>
-      </div>
+      </SectionProducts>
     </>
   );
 }
