@@ -15,3 +15,18 @@
 
 /* background-color: #242424; */
 
+/* ---------------------------- config image-zoom */
+[data-rmiz-content="found"] img {
+  cursor: url('https://img.icons8.com/?size=20&id=715&format=png&color=000000'), auto;
+}
+
+[data-rmiz-modal-overlay="visible"] {
+  background-color: #181818;
+}
+
+
+[data-rmiz-modal-img] {
+  cursor: url('https://img.icons8.com/?size=20&id=717&format=png&color=000000'), auto;
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+}

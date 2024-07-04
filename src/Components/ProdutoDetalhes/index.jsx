@@ -1,16 +1,48 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import 'react-medium-image-zoom/dist/styles.css'
-import styles from "./ProdutoDetalhes.module.css";
+import "react-medium-image-zoom/dist/styles.css";
 import Header from "../Header";
-import { FaStar } from "react-icons/fa";
 import Footer from "../Footer";
 import Quantidade from "../Quantidade";
 import { Fade, Zoom as RevealZoom } from "react-awesome-reveal";
-import Zoom from 'react-medium-image-zoom'
+import Zoom from "react-medium-image-zoom";
 import { FaShoppingCart } from "react-icons/fa";
-
+import {
+  Details,
+  ImageContainer,
+  ImageProduct,
+  InfoContainer,
+  Name,
+  Version,
+  Price,
+  Description,
+  Free,
+  Platform,
+  PlatformImg,
+  Assess,
+  Star,
+  Payment,
+  Buy,
+  AddToCart,
+  FormsPayment,
+  Flags,
+  InfoToPay,
+  Line,
+  LineProduct,
+  About,
+  AboutTitle,
+  Caracters,
+  CaractersTitle,
+  CaractersUl,
+  CaractersLi,
+  EffectZoom,
+  ImageTitle,
+  Container,
+  ImageExample,
+  LoadingComponent,
+  Loading,
+} from "./styles";
 
 // Imagens locais
 
@@ -34,7 +66,7 @@ function ProdutoDetalhes() {
 
   useEffect(() => {
     const buscarProduto = async () => {
-      const response = await fetch('/data/Produtos.json');
+      const response = await fetch("/data/Produtos.json");
       const data = await response.json();
       const produtoEncontrado = data.find((p) => p.id === parseInt(id));
       setProduto(produtoEncontrado);
@@ -45,164 +77,130 @@ function ProdutoDetalhes() {
 
   if (!produto) {
     return (
-      <div className={styles.carregando}>
-        <p></p>
-      </div>
+      <LoadingComponent>
+        <Loading></Loading>
+      </LoadingComponent>
     );
   }
 
   return (
     <>
-    
-    
-    <Header/> 
+      <Header />
       <Fade duration={750} cascade delay={300}>
-      <div key={produto.id} className={styles.detalhes}>
-        <div className={styles.quadro_1}>
-          <Zoom>
-          <img src={produto.imagem}  alt={produto.nome} />
-          </Zoom>
-        </div>
-        <div className={styles.linha}/>
-        <div className={styles.quadro_2}>
-          <h1 className={styles.titulo}>{produto.nome}</h1>
-          <p className={styles.versao}>{produto.versao}</p>
+        <Details key={produto.id}>
+          <ImageContainer>
+            <Zoom>
+              <ImageProduct src={produto.imagem} alt={produto.nome} />
+            </Zoom>
+          </ImageContainer>
+          <LineProduct />
+          <InfoContainer>
+            <Name>{produto.nome}</Name>
+            <Version>{produto.versao}</Version>
 
-          <p className={styles.preco}>{produto.preco}</p>
+            <Price>{produto.preco}</Price>
 
-          <p className={styles.descricao}>{produto.descricao}</p>
+            <Description>{produto.descricao}</Description>
 
-          <div className={styles.frete}>
-            Frete Gratis
-            <img
-              src="/images/compras/frete.png"
-              alt="frete-gratis"
-            />
-          </div>
+            <Free>
+              Frete Gratis
+              <img src="/images/compras/frete.png" alt="frete-gratis" />
+            </Free>
 
-          <div className={styles.plataforma}>
-            Sistema operacional:
-            {produto.sistema_operacional.map((imgName, index) => (
-              <img
-                key={index}
-                src={imagensSistemaOperacional[imgName]}
-                alt={`${produto.nome} - ${index}`}
-              />
-            ))}
-          </div>
+            <Platform>
+              Sistema operacional:
+              {produto.sistema_operacional.map((imgName, index) => (
+                <PlatformImg
+                  key={index}
+                  src={imagensSistemaOperacional[imgName]}
+                  alt={`${produto.nome} - ${index}`}
+                />
+              ))}
+            </Platform>
 
-          <p className={styles.avaliacao}>
-            Avaliações:
-            <FaStar className={styles.star} />
-            {produto.avaliacao}
-          </p>
+            <Assess>
+              Avaliações:
+              <Star />
+              {produto.avaliacao}
+            </Assess>
 
-          <div className={styles.quadro_3}>
-            <Quantidade />
-            <Link
-              to={produto.link_compra}
-              target={"_blank"}
-              className={styles.botao_comprar}
-            >
-              Comprar
-            </Link>
-            <Link  className={styles.botao_adicionar}><FaShoppingCart /></Link>
-          </div>
+            <Payment>
+              <Quantidade />
+              <Buy to={produto.link_compra} target={"_blank"}>
+                Comprar
+              </Buy>
+              <AddToCart>
+                <FaShoppingCart />
+              </AddToCart>
+            </Payment>
 
-          <div className={styles.pagamentos}>
-            <h3>Formas de pagamento:</h3>
+            <FormsPayment>
+              <h3>Formas de pagamento:</h3>
 
-            <div className={styles.bandeiras}>
-              <img
-                src="/images/compras/mercadoPago.svg" alt="mercado-pago"
-              />
-              <img
-                src="/images/compras/visa.svg" alt="visa"
-              />
-              <img
-                src="/images/compras/mastercard.svg"
-                alt="mastercard"
-              />
-              <img
-                src="/images/compras/amex.svg"
-                alt="amex"
-              />
-              <img
-                src="/images/compras/diners.svg"
-                alt="eloDiners"
-              />
-              <img
-                src="/images/compras/pix.svg"
-                alt="pix"
-              />
-            </div>
+              <Flags>
+                <img src="/images/compras/mercadoPago.svg" alt="mercado-pago" />
+                <img src="/images/compras/visa.svg" alt="visa" />
+                <img src="/images/compras/mastercard.svg" alt="mastercard" />
+                <img src="/images/compras/amex.svg" alt="amex" />
+                <img src="/images/compras/diners.svg" alt="eloDiners" />
+                <img src="/images/compras/pix.svg" alt="pix" />
+              </Flags>
 
-            <ul>
-              <li>10x sem juros</li>
-              <li>5% OFF a vista no pix</li>
-            </ul>
-          </div>
-        </div>
-        
-      </div>
-      
+              <ul>
+                <InfoToPay>10x sem juros</InfoToPay>
+                <InfoToPay>5% OFF a vista no pix</InfoToPay>
+              </ul>
+            </FormsPayment>
+          </InfoContainer>
+        </Details>
       </Fade>
       <RevealZoom duration={750} delay={250}>
-      <hr className={styles.divisor} />
+        <Line />
       </RevealZoom>
 
-      <div className={styles.geral}>
+      <About>
         <Fade duration={750} triggerOnce>
-        <p className={styles.titulo_geral}>Visão geral:</p>
-        <p className={styles.descricao}>{produto.descricao_geral}</p>
+          <AboutTitle>Visão geral:</AboutTitle>
+          <Description>{produto.descricao_geral}</Description>
         </Fade>
-        <div className={styles.carateristicas}>
+        <Caracters>
           <Fade duration={750} triggerOnce>
-            <h3>Características:</h3>
+            <CaractersTitle>Características:</CaractersTitle>
           </Fade>
-          <ul>
+          <CaractersUl>
             <Fade duration={250} cascade direction="up">
-            {Object.entries(produto.caracteristicas).map(
-              ([key, value], index) => (
-                <li key={key}>
-                  {index + 1} - {value}
-                </li>
-              )
-            )}
+              {Object.entries(produto.caracteristicas).map(
+                ([key, value], index) => (
+                  <CaractersLi key={key}>
+                    {index + 1} - {value}
+                  </CaractersLi>
+                )
+              )}
             </Fade>
-          </ul>
-        </div>
-        <RevealZoom duration={750}  className={styles.section}>
-          <h3 className={styles.tituloImagens}>Imagens exemplo:</h3>
-        <section className={styles.imagem}>
-          
+          </CaractersUl>
+        </Caracters>
+        <EffectZoom duration={750}>
+          <ImageTitle>Imagens exemplo:</ImageTitle>
+          <Container>
             <Zoom>
-          
-          <img src={produto.imagens_exemplos[0]} alt="imagens" />
-          
-          </Zoom>
+              <ImageExample src={produto.imagens_exemplos[0]} alt="imagens" />
+            </Zoom>
 
-          <Zoom>
-         
-          <img src={produto.imagens_exemplos[1]} alt="imagens" />
-          
-          </Zoom>
+            <Zoom>
+              <ImageExample src={produto.imagens_exemplos[1]} alt="imagens" />
+            </Zoom>
 
-          <Zoom>
-          
-          <img src={produto.imagens_exemplos[2]} alt="imagens" />
-          
-          </Zoom>
-        </section>
-        </RevealZoom>
-      </div>
-      
+            <Zoom>
+              <ImageExample src={produto.imagens_exemplos[2]} alt="imagens" />
+            </Zoom>
+          </Container>
+        </EffectZoom>
+      </About>
+
       <Fade>
-      <Footer />
+        <Footer />
       </Fade>
-      
-      
-      </>
+    </>
   );
 }
 

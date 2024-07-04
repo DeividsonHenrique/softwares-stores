@@ -147,14 +147,14 @@ export const MobileCart = styled(FaShoppingCart)`
 `;
 
 export const MobileMenu = styled(FaBars)`
-  display: block;
+  display: none;
 
   @media (max-width: 478px) {
     display: block;
     position: fixed;
     top: 10px;
     right: 20px;
-    color: black;
+    color: #1fcc44;
     z-index: 9999;
     font-size: 20px;
   }
