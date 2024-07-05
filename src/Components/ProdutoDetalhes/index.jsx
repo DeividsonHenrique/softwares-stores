@@ -11,7 +11,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import {
   Details,
   ImageContainer,
-  ImageProduct,
+  // ImageProduct,
   InfoContainer,
   Name,
   Version,
@@ -43,6 +43,8 @@ import {
   LoadingComponent,
   Loading,
 } from "./styles";
+
+import ImageMagnifier from "../ImageMagnifier";
 
 // Imagens locais
 
@@ -89,9 +91,8 @@ function ProdutoDetalhes() {
       <Fade duration={750} cascade delay={300}>
         <Details key={produto.id}>
           <ImageContainer>
-            <Zoom>
-              <ImageProduct src={produto.imagem} alt={produto.nome} />
-            </Zoom>
+            <ImageMagnifier src={produto.imagem} alt={produto.nome}>
+            </ImageMagnifier>
           </ImageContainer>
           <LineProduct />
           <InfoContainer>

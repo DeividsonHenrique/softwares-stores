@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const MagnifierContainer = styled.div`
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border: 1px solid #ddd;
   overflow: hidden;
   display: flex;
@@ -30,6 +30,6 @@ export const Lens = styled.div`
 
 export const ZoomedImage = styled.img`
   position: absolute;
-  width: 600px; /* 2x of the original size */
-  height: 600px; /* 2x of the original size */
+  width: 400px; /* 2x of the original size */
+  height: 400px; /* 2x of the original size */
 `;

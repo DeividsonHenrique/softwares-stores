@@ -28,8 +28,8 @@ function ImageMagnifier({ src }) {
       <Image ref={imgRef} src={src} alt="Magnifiable" />
       <Lens
         style={{
-          top: lensPosition.y - 350,
-          left: lensPosition.x - 350,
+          top: lensPosition.y - 400,
+          left: lensPosition.x - 400,
         }}
         show={showLens}
       >
@@ -37,8 +37,8 @@ function ImageMagnifier({ src }) {
           src={src}
           alt="Zoomed"
           style={{
-            top: -(lensPosition.y * 2 - 350),
-            left: -(lensPosition.x * 2 - 350),
+            top: -(lensPosition.y * 2 - 400),
+            left: -(lensPosition.x * 2 - 400),
           }}
         />
       </Lens>
