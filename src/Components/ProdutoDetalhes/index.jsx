@@ -43,7 +43,6 @@ import {
   LoadingComponent,
   Loading,
 } from "./styles";
-
 import ImageMagnifier from "../ImageMagnifier";
 
 // Imagens locais
