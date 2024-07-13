@@ -19,6 +19,7 @@ function Carrinho() {
           <button>Remover</button>
           <button>Salvar</button>
         </div>
+        
       </Container>
     </>
   );
