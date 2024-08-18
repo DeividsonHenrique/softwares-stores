@@ -16,6 +16,7 @@ function Carrinho() {
             <Quantidade />
             <p>Preço</p>
             <p>Frete</p>
+            
           </div>
           <button>Remover</button>
           <button>Salvar</button>
