@@ -43,7 +43,10 @@ import {
   LoadingComponent,
   Loading,
 } from "./styles";
-import ImageMagnifier from "../ImageMagnifier";
+// import ImageMagnifier from "../ImageMagnifier";
+import ReactImageZoom from 'react-image-zoom';
+import ReactDOM from 'react-dom';
+import React from "react";
 
 // Imagens locais
 
@@ -84,15 +87,21 @@ function ProdutoDetalhes() {
     );
   }
 
+  const zoomProps = { width: 300, height: 300, zoomWidth: 500, img: produto.imagem, zoomPosition: 'original' };
+
   return (
     <>
       <Header />
       <Fade duration={750} cascade delay={300}>
         <Details key={produto.id}>
-          <ImageContainer>
-            <ImageMagnifier src={produto.imagem} alt={produto.nome}>
-            </ImageMagnifier>
-          </ImageContainer>
+          {/* <ImageContainer> */}
+
+            <div>
+          <ReactImageZoom {...zoomProps} />
+          </div>
+           
+            
+          {/* </ImageContainer> */}
           <LineProduct />
           <InfoContainer>
             <Name>{produto.nome}</Name>
