@@ -85,7 +85,7 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 50px;
-  background-color: white;
+  // background-color: white;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px #181818;

@@ -45,8 +45,6 @@ import {
 } from "./styles";
 // import ImageMagnifier from "../ImageMagnifier";
 import ReactImageZoom from 'react-image-zoom';
-import ReactDOM from 'react-dom';
-import React from "react";
 
 // Imagens locais
 
@@ -87,21 +85,21 @@ function ProdutoDetalhes() {
     );
   }
 
-  const zoomProps = { width: 300, height: 300, zoomWidth: 500, img: produto.imagem, zoomPosition: 'original' };
+  const zoomProps = { width: 400, height: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AbL2ho8S25hU5uzbfg_QgGdhwv2pDXxVdA&s", zoomPosition: 'original' };
+
 
   return (
     <>
       <Header />
       <Fade duration={750} cascade delay={300}>
         <Details key={produto.id}>
-          {/* <ImageContainer> */}
+          <ImageContainer>
 
-            <div>
+            {/* Renderiza a imagem com a funcionalidade de zoom */}
           <ReactImageZoom {...zoomProps} />
-          </div>
            
             
-          {/* </ImageContainer> */}
+          </ImageContainer>
           <LineProduct />
           <InfoContainer>
             <Name>{produto.nome}</Name>
