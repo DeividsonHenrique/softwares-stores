@@ -202,6 +202,7 @@ function ProdutoDetalhes() {
             </Zoom>
           </Container>
         </EffectZoom>
+        
       </About>
 
       <Fade>
