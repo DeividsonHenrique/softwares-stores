@@ -11,7 +11,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import {
   Details,
   ImageContainer,
-  // ImageProduct,
+  ImageProduct,
   InfoContainer,
   Name,
   Version,
@@ -44,7 +44,6 @@ import {
   Loading,
 } from "./styles";
 // import ImageMagnifier from "../ImageMagnifier";
-import ReactImageZoom from 'react-image-zoom';
 
 // Imagens locais
 
@@ -85,20 +84,13 @@ function ProdutoDetalhes() {
     );
   }
 
-  const zoomProps = { width: 400, height: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AbL2ho8S25hU5uzbfg_QgGdhwv2pDXxVdA&s", zoomPosition: 'original' };
-
-
   return (
     <>
       <Header />
       <Fade duration={750} cascade delay={300}>
         <Details key={produto.id}>
           <ImageContainer>
-
-            {/* Renderiza a imagem com a funcionalidade de zoom */}
-          <ReactImageZoom {...zoomProps} />
-           
-            
+            <ImageProduct src={produto.imagem} alt={produto.nome} />
           </ImageContainer>
           <LineProduct />
           <InfoContainer>
@@ -202,7 +194,6 @@ function ProdutoDetalhes() {
             </Zoom>
           </Container>
         </EffectZoom>
-        
       </About>
 
       <Fade>
